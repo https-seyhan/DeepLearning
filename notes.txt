@@ -8,3 +8,6 @@ spacy_words = [word for word in nlp.vocab.strings]
 glove_filename = 'glove.840B.300d.txt'
 glove_words = [line.split()[0].decode('utf-8') for line in open(glove_filename)]
 
+nlp = spacy.load("en_core_web_sm")
+nlp.vocab.vectors.from_glove("/path/to/vectors")
+
