@@ -1,0 +1,10 @@
+glove.6B.50d.txt
+https://www.cse.unsw.edu.au/~cs9444/17s2/hw2/src/
+50-dimensional word embeddings for English, sorted by frequency
+
+import spacy
+nlp = spacy.load('en_vectors_web_lg')
+spacy_words = [word for word in nlp.vocab.strings]
+glove_filename = 'glove.840B.300d.txt'
+glove_words = [line.split()[0].decode('utf-8') for line in open(glove_filename)]
+
