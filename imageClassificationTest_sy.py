@@ -72,3 +72,4 @@ x = np.expand_dims(x, axis=0)
 x = preprocess_input(x)
 
 preds = model.predict(x)
+print('Predicted:', preds)
