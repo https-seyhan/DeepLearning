@@ -37,7 +37,7 @@ def pre_process_data(filepath):
 		with open(filename, 'r') as f:
 			dataset.append((neg_label, f.read()))
 	
-	dataset = sample(dataset, 1000)
+	dataset = sample(dataset, 100) #number of samples to be used
 	shuffle(dataset)
 	return dataset
 	
@@ -65,7 +65,7 @@ def tokenize_and_vectorized(dataset):
 
 def tok_vec(dataset):
 	vectorized_data = []
-	print('Size of the Dataset :', len(dataset))
+	#print('Size of the Dataset :', len(dataset))
 	for sample in dataset:
 		#print(sample[1])
 		tokens = tokenizer(sample[1])
@@ -96,32 +96,55 @@ def collect_expected(dataset):
 	
 def rnnmodel(dataset, vectorised_data, expected):
 	
+	print('Size of the Dataset :', len(dataset))
+	
 	maxlen = 400 #400 tokens per example
+	maxlen = 50 #400 tokens per example
 	batch_size = 32
+	embedding_dims = 300 # word vectors are 300 elements long
 	embedding_dims = 300 # word vectors are 300 elements long
 	epochs = 2
 	num_neurons = 50
 	
-	
-	
+	print("Start of the rnn !!!!! ")
 	
 	split_point =  int(len(vectorised_data) * .8)
 	
+	print("End of Split !!!!! ")
+	
 	x_train = vectorised_data[:split_point]
+	print("Shape ", np.shape(x_train))
+	print(len(x_train))
+	#print(len(x_train[1]))
+	print(sum(len(x) for x in x_train))
+	#print('Size of the Training Dataset :', len(x_train))
 	y_train = expected[:split_point]
+	
+	#print("X train before padding ", x_train)
+	
+	#print("End of Train!!!
 	
 	x_test = vectorised_data[split_point:]
 	y_test = expected[split_point:]
 	
+	print("Start of pad_trunc !!!!! ")
 	x_train = pad_trunc(x_train, maxlen)
+	#print("X train after padding ", x_train)
 	x_test = pad_trunc(x_test, maxlen)
+	
+	print("End of pad_trunc !!!!! ")
+	
+	print('Maxlen ', maxlen)
+	print('Embedding dims ', embedding_dims)
 	
 	x_train= np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
 	y_train = np.array(y_train)
+	print("End of Training Reshape !!!!! ")
 	
 	x_test = np.reshape(x_test, (len(x_test), maxlen, embedding_dims)) # sample, time steps, number of features
 	y_test = np.array(y_test)
 	
+	print("Start of the Model !!!!! ")
 	model = Sequential()
 	
 	model.add(SimpleRNN(num_neurons, return_sequences = True, input_shape=(maxlen, embedding_dims)))
@@ -192,9 +215,21 @@ if __name__ == '__main__':
 	print ("Start !!!")
 	
 	dataset = pre_process_data(traindata)
+	endtime = datetime.datetime.now()
+	
+	print('Data prepocessing took :', starttime - endtime)
 	vectorised_data = tok_vec(dataset)
+	endtime = datetime.datetime.now()
+	print('Vectorisation took :', starttime - endtime)
+	
 	expected = collect_expected(dataset)
+	endtime = datetime.datetime.now()
+	print('Collection took :', endtime - starttime)
+	
 	rnnmodel(dataset, vectorised_data, expected)	
+	
+	endtime = datetime.datetime.now()
+	print('RNN Model Run:', endtime - starttime)
 
 	#end time
 	endtime = datetime.datetime.now()
