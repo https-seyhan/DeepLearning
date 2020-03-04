@@ -1,6 +1,7 @@
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM, Bidirectional
-from keras.optimizers import RMSprop
+from keras.optimizers import RMSprop, Adam, SGD
+from keras import optimizers
 from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 import numpy as np
@@ -21,9 +22,9 @@ from sklearn.utils import compute_class_weight
 #Therefore, embedding modules is excluded in the LSTM architecture.
 
 maxlen = 5 #400 # number of words in a row. Input words.
-batch_size = 32 #32 #32
-embedding_dims = 300 #300 #5 #300
-epochs = 40 #best result is with 20
+batch_size = 200 #32 #32 #200 gave the best results
+embedding_dims = 500 #300 #5 #300
+epochs = 50 #best result is with 20
 num_neurons = 50 #50
 sample_size =  997 #10
 
@@ -160,9 +161,17 @@ def lstmModel(vectorised_data, target):
     #model.add((Dense(2)))
     #model.add(Activation('softmax'))  # one class
 
-    optimizer = RMSprop(learning_rate=0.01) # use learning rate to improve the accuracy of the model
+    rmsprob = RMSprop(learning_rate=0.001, rho=0.3) # use learning rate to improve the accuracy of the model
+    adam = Adam(lr=0.0001)
+    #sgd = SGD(lr=0.1)
+    #sgd = optimizers.SGD(lr=0.0001, decay=1e-6, momentum=0.2, nesterov=True)
+
+    model.compile(loss='binary_crossentropy', optimizer= rmsprob, metrics=['accuracy'])
+    #model.compile(loss='binary_crossentropy', optimizer=adam)
+    #model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'] )
+
     #model.compile('rmsprop', 'binary_crossentropy', metrics=['accuracy'])
-    model.compile(loss='binary_crossentropy', optimizer=optimizer)
+
     #model.compile(loss='categorical_crossentropy', optimizer=optimizer)
     #model.compile('rmsprop', 'binary_crossentropy', metrics=['accuracy'])
     #model.compile(sample_weight_mode="temporal"
@@ -180,7 +189,7 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
     #print(np.unique(y_train))
 
 
-    cls_weight_dict = [{0: 1, 1: 1}, {0: 1, 1: 90}] #two class mapping of weights
+    cls_weight_dict = [{0: 1, 1: 1}, {0: 1, 1: 80}] #two class mapping of weights
     val_sample_weights = compute_sample_weight(cls_weight_dict, y_test)
 
     weights = compute_sample_weight(class_weight="balanced", y=y_train)
@@ -213,7 +222,7 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
         json_file.write(model_structure)
 
     conf_matrix(history, model, x_test, y_test)
-    plotresults(history, y_train)
+    #plotresults(history, y_train)
 
     # model.save_weights("rnn_weights.h5)
 
@@ -226,7 +235,7 @@ def collect_expected(dataset):
     #bugsdata = pd.read_csv('bug-metrics.csv', sep= ',')
     #print(dataset.columns)
 
-    bugs = dataset['criticalBugs']
+    bugs = dataset['criticalBugs'] # training dataset has 8 critical bugs and test dataset has 2. Extreamly unbalanced dataset.
 
     for bug in bugs:
         #print(bug)
