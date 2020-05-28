@@ -5,7 +5,7 @@ Created on Mon Mar  4 15:03:15 2019
 
 @author: saul
 """
-
+#This is an example of how to calculate logloss for Machine Learning
 #!/usr/bin/env python
 from sklearn.neural_network import MLPClassifier
 #from sklearn.model_selection import train_test_split
