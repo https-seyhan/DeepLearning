@@ -5,6 +5,7 @@ Created on Mon Apr  8 20:42:54 2019
 
 @author: saul
 """
+#Keras and LSTM
 
 import numpy as np
 from keras.preprocessing import sequence
