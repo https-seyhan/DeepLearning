@@ -1,4 +1,4 @@
-
+# This model performs image classification using ResNet-50
 import numpy as np
 import os
 import time
