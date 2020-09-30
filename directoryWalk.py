@@ -5,6 +5,7 @@ Created on Thu Jun 27 07:51:38 2019
 
 @author: saul
 """
+#Travel though all directories and sub-directories and grab images. Then convert images to text.
 
 import os 
 import glob
@@ -54,8 +55,6 @@ def convertImageString(folders):
         #print("Evidence Path ", evidencepath )
         if evidenceFiles != []:
             
-            #print(folders[folder], " ",evidenceFiles, '\n')
-            
             for image in evidenceFiles:
                 #print(folders[folder], " ", image, '\n')
             
@@ -83,7 +82,7 @@ def convertImageString(folders):
                 ocrtext = pytesseract.image_to_string(img)
                 
                 image_to_text_list.append([folders[folder],image.split('/')[-1], ocrtext.encode('utf-8') ])
-                print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+                
                 
         print("Image to Text ", image_to_text_list)
         evidences = pd.DataFrame(image_to_text_list, columns=['folderName', 'imageName', 'Text']) 
@@ -106,7 +105,6 @@ def convertImageString(folders):
     data_list.append([[b]])
     #convert list to dataframe
     bb = pd.DataFrame(data_list, columns=['text'])
-    #bb.to_csv('/home/saul/pythontraining/NLP/imagetotext.csv', sep=',', index=False)
 
 
 def list_files(dir):                                                                                                  
@@ -140,7 +138,6 @@ def getSubDirs(dir):
             SplitTypes.append(file_name.split(".")[-1])
     list(set(SplitTypes))  #remove duplicate elements in the list
     
-
     types = ['*.jpg', '*.pdf', '*.odg']
     files_grabbed = []
     for files in types:
@@ -151,14 +148,6 @@ print(SplitTypes)
 
 if __name__ == '__main__':
     print("Test")
-    #print(dirpath)
-    #list_files(dirpath)
-    #print(list_files(dirpath))
     getSubDirs(dirpath)
     
-    import glob
-    types = ['*.jpg', '*.pdf', '*.odg']
-    files_grabbed = []
-    for files in types:
-        files_grabbed.extend(glob.glob(files))
     
