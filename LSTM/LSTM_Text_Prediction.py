@@ -47,13 +47,8 @@ df.loc[df['Product'] == 'Credit card', 'Product'] = 'Credit card or prepaid card
 df.loc[df['Product'] == 'Payday loan', 'Product'] = 'Payday loan, title loan, or personal loan'
 df.loc[df['Product'] == 'Virtual currency', 'Product'] = 'Money transfer, virtual currency, or money service'
 df = df[df.Product != 'Other financial service']
-
-
-
 df['Product'].value_counts().sort_values(ascending=False).iplot(kind='bar', yTitle='Number of Complaints', 
                                                                 title='Number complaints in each product')
-
-
 
 
 def print_plot(index):
@@ -63,7 +58,6 @@ def print_plot(index):
         print('Product:', example[1])
 
 print_plot(10)
-
 print_plot(100)
 
 df = df.reset_index(drop=True)
@@ -90,9 +84,6 @@ df['Consumer complaint narrative'] = df['Consumer complaint narrative'].str.repl
 
 
 print_plot(10)
-
-
-
 print_plot(100)
 
 # The maximum number of words to be used. (most frequent)
@@ -107,24 +98,17 @@ tokenizer.fit_on_texts(df['Consumer complaint narrative'].values)
 word_index = tokenizer.word_index
 print('Found %s unique tokens.' % len(word_index))
 
-
-
 X = tokenizer.texts_to_sequences(df['Consumer complaint narrative'].values)
 X = pad_sequences(X, maxlen=MAX_SEQUENCE_LENGTH)
+
 print('Shape of data tensor:', X.shape)
-
-
 
 Y = pd.get_dummies(df['Product']).values
 print('Shape of label tensor:', Y.shape)
 
-
-
 X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size = 0.10, random_state = 42)
 print(X_train.shape,Y_train.shape)
 print(X_test.shape,Y_test.shape)
-
-
 
 model = Sequential()
 model.add(Embedding(MAX_NB_WORDS, EMBEDDING_DIM, input_length=X.shape[1]))
@@ -134,9 +118,6 @@ model.add(Dense(13, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 print(model.summary())
 
-
-
-
 epochs = 5
 batch_size = 64
 
@@ -145,15 +126,11 @@ history = model.fit(X_train, Y_train, epochs=epochs, batch_size=batch_size,valid
 accr = model.evaluate(X_test,Y_test)
 print('Test set\n  Loss: {:0.3f}\n  Accuracy: {:0.3f}'.format(accr[0],accr[1]))
 
-
-
 plt.title('Loss')
 plt.plot(history.history['loss'], label='train')
 plt.plot(history.history['val_loss'], label='test')
 plt.legend()
 plt.show();
-
-
 
 plt.title('Accuracy')
 plt.plot(history.history['acc'], label='train')
