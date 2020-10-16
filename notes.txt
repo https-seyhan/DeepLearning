@@ -1,3 +1,4 @@
+#Resources on GloVe anf spacy
 glove.6B.50d.txt
 https://www.cse.unsw.edu.au/~cs9444/17s2/hw2/src/
 50-dimensional word embeddings for English, sorted by frequency
