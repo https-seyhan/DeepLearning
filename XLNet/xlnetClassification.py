@@ -33,8 +33,6 @@ df_data.columns
 
 df_data.labels.head(n=2)
 
-
-
 df_data.labels.unique()
 # Analyse the labels distribution
 df_data.labels.value_counts()
@@ -217,8 +215,6 @@ val_segs = torch.tensor(val_segs)
 # Set batch num
 batch_num = 32
 
-
-
 # Set token embedding, attention embedding, segment embedding
 train_data = TensorDataset(tr_inputs, tr_masks,tr_segs, tr_tags)
 train_sampler = RandomSampler(train_data)
@@ -242,6 +238,8 @@ model_file_address = 'xlnet-base-cased'
 # Recommand download the model before using
 # Download model from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-pytorch_model.bin"
 # Download model from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-config.json" 
+
+#Create XLNet model
 model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_labels=len(tag2idx))
 
 model;
