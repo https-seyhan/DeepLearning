@@ -22,6 +22,8 @@ import torch.nn.functional as F
 
 from pytorch_transformers import (XLNetConfig, XLNetForSequenceClassification, XLNetTokenizer)
 
+#XLNet with Pytorch
+
 os.chdir('/home/saul/xlnet/')
 data_file_address = "text_classification_dataset.csv"
 
