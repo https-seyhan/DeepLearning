@@ -46,7 +46,6 @@ sentences = df_data.texts.to_list()
 sentences[0]
 
 
-
 # Get tag labels data
 labels = df_data.labels.to_list()
 print(labels[0])
