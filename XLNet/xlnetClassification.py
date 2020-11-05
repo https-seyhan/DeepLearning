@@ -100,7 +100,7 @@ tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
 #The Embedding process was referred to XLNet official repo
 
-#This process is huge differnent from BERT
+#This process is greately different from BERT
 
 max_len  = 64
 
@@ -224,7 +224,7 @@ valid_dataloader = DataLoader(valid_data, sampler=valid_sampler, batch_size=batc
 
 #Train model
 
-#Load XLNet model
+#Load XLNet pre-trained model
 
 
 # In this document, contain confg(txt) and weight(bin) files
