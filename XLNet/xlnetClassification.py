@@ -8,7 +8,7 @@ import numpy as np
 from sklearn.metrics import classification_report # to mesure the accuracy of the model
 
 
-import torch
+import torch #pytorch
 import os
 from tqdm import tqdm,trange
 from torch.optim import Adam
