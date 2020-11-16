@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import math
 import numpy as np
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report # to mesure the accuracy of the model
 
 
 import torch
