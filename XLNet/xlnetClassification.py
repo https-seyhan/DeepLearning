@@ -25,9 +25,9 @@ data_file_address = "text_classification_dataset.csv"
 
 df_data = pd.read_csv(data_file_address,sep=",",encoding="utf-8",names=['labels','texts'])
 
-df_data.columns # get variables of the dataset of the modelling
+df_data.columns # get variables of the dataset of the modelling.
 
-df_data.labels.head(n=2)
+df_data.labels.head(n=2) # get first two rows the dataset.
 
 df_data.labels.unique()
 # Analyse the labels distribution
@@ -50,7 +50,7 @@ print(labels[0])
 # Set a dict for mapping id to tag name
 #tag2idx = {t: i for i, t in enumerate(tags_vals)}
 
-# Recommend to set it by manual define, good for reusing
+# I recommend to set  by manual define, good for reusing
 # 0:negative, 1: positive
 tag2idx={'0': 0,
  '1': 1}
