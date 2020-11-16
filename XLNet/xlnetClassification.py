@@ -33,7 +33,7 @@ df_data.labels.unique()
 # Analyse the labels distribution
 df_data.labels.value_counts()
 
-#Parser data into document structure
+#Parser data into document structure.
 
 # Get sentence data
 sentences = df_data.texts.to_list()
@@ -44,13 +44,13 @@ sentences[0]
 labels = df_data.labels.to_list()
 print(labels[0])
 
-#
+# Generate Class Labels.
 
 #Make TAG name into index for training
 # Set a dict for mapping id to tag name
 #tag2idx = {t: i for i, t in enumerate(tags_vals)}
 
-# I recommend to set  by manual define, good for reusing
+# I recommend to set labels manually define, good for reusing
 # 0:negative, 1: positive
 tag2idx={'0': 0,
  '1': 1}
