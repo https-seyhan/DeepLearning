@@ -18,6 +18,7 @@ class_labels = [
 ]
 
 # Load the json file that contains the model's structure
+# Load already constructed CNN model
 f = Path("model_structure.json")
 model_structure = f.read_text()
 
