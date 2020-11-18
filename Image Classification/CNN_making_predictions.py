@@ -31,7 +31,7 @@ model.load_weights("model_weights.h5")
 # Load an image file to test, resizing it to 32x32 pixels (as required by this model)
 img = image.load_img("frog.png", target_size=(32, 32))
 
-# Convert the image to a numpy array
+# Convert the image to a numpy array. Every image must be converted to numerical array.
 image_to_test = image.img_to_array(img)
 
 # Add a fourth dimension to the image (since Keras expects a list of images, not a single image)
