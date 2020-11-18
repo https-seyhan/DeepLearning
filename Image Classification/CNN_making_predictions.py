@@ -3,7 +3,7 @@ from pathlib import Path
 from keras.preprocessing import image
 import numpy as np
 
-# These are the CIFAR10 class labels from the training data (in order from 0 to 9)
+# These are the CIFAR10 class labels from the training data (in order from 0 to 9). Ten classes.
 class_labels = [
     "Plane",
     "Car",
