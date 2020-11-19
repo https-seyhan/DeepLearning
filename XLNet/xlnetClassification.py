@@ -57,7 +57,6 @@ tag2idx={'0': 0,
 tag2idx
 
 
-
 # Mapping index to name in dictionary
 tag2name={tag2idx[key] : key for key in tag2idx.keys()}
 
