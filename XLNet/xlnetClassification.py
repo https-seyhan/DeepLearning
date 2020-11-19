@@ -58,10 +58,9 @@ tag2idx
 
 
 
-# Mapping index to name
+# Mapping index to name in dictionary
 tag2name={tag2idx[key] : key for key in tag2idx.keys()}
 
-tag2name
 
 #Make tranning data
 
