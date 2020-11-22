@@ -37,7 +37,6 @@ df.info()
 
 df.Product.value_counts()
 
-
 df.loc[df['Product'] == 'Credit reporting', 'Product'] = 'Credit reporting, credit repair services, or other personal consumer reports'
 df.loc[df['Product'] == 'Credit card', 'Product'] = 'Credit card or prepaid card'
 df.loc[df['Product'] == 'Payday loan', 'Product'] = 'Payday loan, title loan, or personal loan'
