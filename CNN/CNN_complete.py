@@ -4,7 +4,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2D
 from pathlib import Path
 
-# Load data set
+# Load cifar10 dataset
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
 # Normalize data set to 0-to-1 range
