@@ -24,7 +24,7 @@ model = Sequential()
 model.add(Conv2D(32, (3, 3), padding='same', input_shape=(32, 32, 3), activation="relu"))
 #Convolutional Layer
 model.add(Conv2D(32, (3, 3), activation="relu"))
-
+#Max polling of Convolutional Layer
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.25))
 
