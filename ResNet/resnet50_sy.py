@@ -19,9 +19,9 @@ Created on Sat Aug  3 17:24:29 2019
 
 import numpy as np
 import warnings
+
 from keras import layers
 from keras.layers import Input
-
 from keras.layers import Dense
 from keras.layers import Activation
 from keras.layers import Flatten
