@@ -14,7 +14,6 @@ Created on Sat Aug  3 17:24:29 2019
 
 - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
 
-Adapted from code contributed by BigMoyan.
 '''
 
 
