@@ -214,7 +214,7 @@ def ResNet50(include_top=True, weights='imagenet',
 
     x = ZeroPadding2D((3, 3))(img_input) # This layer can add rows and columns of zeros at the top, bottom, left and right side of an image tensor
     x = Conv2D(64, (7, 7), strides=(2, 2), name='conv1')(x)
-    
+    # Batch normalization applies a transformation that maintains the mean output close to 0 and the output standard deviation close to 1
     x = BatchNormalization(axis=bn_axis, name='bn_conv1')(x) # Normalize and scale inputs or activations
     x = Activation('relu')(x)
     x = MaxPooling2D((3, 3), strides=(2, 2))(x) #  Downsamples the input representation by taking the maximum value over the window defined by pool_size for each dimension along the features axis. The window is shifted by strides in each dimension.
