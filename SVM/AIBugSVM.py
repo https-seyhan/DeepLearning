@@ -20,7 +20,7 @@ def convertcbow(dataset):
 
     ast = [row.split('::') for row in dataset['classname']]
     # print('ASTs ', ast[:2])
-    # the imput to the cbow is list of list of each line
+    # the input to the cbow is list of list of each line
     cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=3, sg=0)
     # print(ast[:2])
     print(' CBOW model ', cbowmodel)
