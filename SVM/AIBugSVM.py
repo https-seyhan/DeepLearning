@@ -17,7 +17,6 @@ embedding_dims = 6 #300 #5 #300 # size of the word vector
 def convertcbow(dataset):
     sentences = []
     vectorised_codes = []
-    print("Cbow called")
 
     # bugs = pd.read_csv('bug-metrics.csv', sep= ',')
     # print(bugs.columns)
