@@ -22,7 +22,6 @@ def convertcbow(dataset):
     # print('ASTs ', ast[:2])
     # the input to the cbow is list of list of each line
     cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=3, sg=0)
-    # print(ast[:2])
     print(' CBOW model ', cbowmodel)
 
     # Test cbow model
