@@ -64,6 +64,7 @@ def pad_trunc(data, maxlen):
 
     return new_data
 
+# this function is for getting the training dataset
 def collect_expected(dataset):
     expected = []
     #bugsdata = pd.read_csv('bug-metrics.csv', sep= ',')
