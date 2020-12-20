@@ -140,7 +140,6 @@ def SVMModel(vectorised_data, target):
 
 
 if __name__ == '__main__':
-    print(f'Test')
 
     dataset = getDataset()
     vectorised_data = convertcbow(dataset)
