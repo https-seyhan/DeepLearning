@@ -8,7 +8,7 @@ from gensim.models import Word2Vec # The word2vec algorithm uses a neural networ
 import  pandas as pd
 import numpy as np
 from numpy import array
-from keras.utils import to_categorical
+from keras.utils import to_categorical # to convert numerical values to categorical 
 
 maxlen = 5 #400 # number of words in a row. Input words.
 embedding_dims = 6 #300 #5 #300 # size of the word vector
