@@ -29,7 +29,7 @@ df_data.columns # get variables of the dataset of the modelling.
 
 df_data.labels.head(n=2) # get first two rows the dataset.
 
-
+# show classes of the dataset
 df_data.labels.unique()
 # Analyse the labels distribution
 df_data.labels.value_counts()
