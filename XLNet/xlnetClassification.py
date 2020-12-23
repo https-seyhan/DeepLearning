@@ -69,8 +69,6 @@ tag2name={tag2idx[key] : key for key in tag2idx.keys()}
 #    Set 3 embedding, token embedding, mask word embedding, segmentation embedding
 #    Split data set into train and validate, then send them to dataloader
 
-
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()
 n_gpu
