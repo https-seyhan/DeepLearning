@@ -343,8 +343,6 @@ if n_gpu >1:
 
 #Eval model
     
-
-
 # Evalue loop
 model.eval();
 
