@@ -243,7 +243,6 @@ max_grad_norm = 1.0
 # Cacluate train optimiazaion num
 num_train_optimization_steps = int( math.ceil(len(tr_inputs) / batch_num) / 1) * epochs
 
-
 #Set fine tuning method
 
 #Manual optimizer
@@ -331,7 +330,6 @@ model_to_save.config.to_json_file(output_config_file)
 tokenizer.save_vocabulary(xlnet_out_address)
 
 #Load model
-
 model = XLNetForSequenceClassification.from_pretrained(xlnet_out_address,num_labels=len(tag2idx))
 
 # Set model to GPU
