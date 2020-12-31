@@ -75,7 +75,7 @@ def tok_vec(dataset):
 			except KeyError:
 				pass
 		vectorized_data.append(sample_vecs)
-		#print('Sample :', sample)
+		
 		#print('Vectorised Data :', vectorized_data)
 	#doc = nlp(str(dataset[1]))
 	#print(doc)
