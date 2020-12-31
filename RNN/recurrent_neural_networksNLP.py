@@ -11,7 +11,7 @@ import datetime
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, SimpleRNN
 
-#start time
+#start time. count process duration.
 starttime = datetime.datetime.now()
 print(starttime)
 
