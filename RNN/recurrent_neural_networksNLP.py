@@ -63,7 +63,7 @@ def tok_vec(dataset):
 	vectorized_data = []
 	
 	for sample in dataset:
-		#print(sample[1])
+		
 		tokens = tokenizer(sample[1])
 		#print(tokens)
 		sample_vecs = []
