@@ -4,7 +4,6 @@ import numpy as np
 import spacy
 from spacy.tokenizer import Tokenizer # SpaCy Tokeniser. Different from sklearn CountVectorizer 
 from spacy.lang.en import English
-
 from random import shuffle, sample
 import datetime
 #RNN module
