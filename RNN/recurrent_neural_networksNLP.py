@@ -7,7 +7,7 @@ from spacy.lang.en import English
 
 from random import shuffle, sample
 import datetime
-
+#RNN module
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, SimpleRNN
 
