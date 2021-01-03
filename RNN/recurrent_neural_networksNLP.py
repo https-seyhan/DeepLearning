@@ -1,4 +1,4 @@
-import glob
+import glob # The glob module finds all the pathnames matching a specified pattern 
 import os
 import numpy as np
 import spacy
