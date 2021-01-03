@@ -112,7 +112,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 	
 	#print("X train before padding ", x_train)
 	
-	#print("End of Train!!!
+
 	
 	x_test = vectorised_data[split_point:]
 	y_test = expected[split_point:]
