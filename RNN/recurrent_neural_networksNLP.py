@@ -130,6 +130,8 @@ def rnnmodel(dataset, vectorised_data, expected):
 	y_test = np.array(y_test)
 	
 	print("Start of the Model !!!!! ")
+	
+	# Build RNN model
 	model = Sequential()
 	
 	model.add(SimpleRNN(num_neurons, return_sequences = True, input_shape=(maxlen, embedding_dims)))
