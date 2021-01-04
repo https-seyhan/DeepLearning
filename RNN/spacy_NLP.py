@@ -72,5 +72,5 @@ def tok_vec(dataset):
 if __name__ == '__main__':
 	
 	dataset = pre_process_data(traindata)
-	tok_vec(dataset)
+	tok_vec(dataset) # Tokenise and Vectorise the data
 	#vectorized_data = tokenize_and_vectorized(dataset)
