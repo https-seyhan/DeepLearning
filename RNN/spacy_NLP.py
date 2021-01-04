@@ -40,7 +40,6 @@ def tokenize_and_vectorized(dataset):
 		tokens = tokenizer.tokenize(sample[1]) #tokize sentences 
 		sample_vecs = []
 		
-		#print(sample[1])
 		print(tokens)
 		
 		for token in tokens:
