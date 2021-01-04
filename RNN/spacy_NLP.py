@@ -72,7 +72,6 @@ def tok_vec(dataset):
 	#print(dataset[1][1])
 
 if __name__ == '__main__':
-	print ("Test")
 	
 	dataset = pre_process_data(traindata)
 	tok_vec(dataset)
