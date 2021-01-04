@@ -68,7 +68,7 @@ def tok_vec(dataset):
 				pass
 		
 	#doc = nlp(str(dataset[1]))
-	#print(doc)
+	
 	#print(dataset[1][1])
 
 if __name__ == '__main__':
