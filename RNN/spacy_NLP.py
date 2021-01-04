@@ -73,6 +73,4 @@ if __name__ == '__main__':
 	
 	dataset = pre_process_data(traindata)
 	tok_vec(dataset)
-	
-	
 	#vectorized_data = tokenize_and_vectorized(dataset)
