@@ -36,7 +36,7 @@ PATH = '/home/saul/pythontraining/imageClassification/Transfer-Learning-in-keras
 data_path = PATH + '/data2'
 data_dir_list = os.listdir(data_path)
 
-#Allocate training data into a list 
+#Allocate training data into a list after converting them to arrays
 img_data_list=[]
 
 for dataset in data_dir_list:
