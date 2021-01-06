@@ -102,7 +102,6 @@ for layer in custom_resnet_model.layers[:-1]:
 	layer.trainable = False
 
 custom_resnet_model.layers[-1].trainable
-
 custom_resnet_model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 #custom_resnet_model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
 #categorical  did  perform slightly better
