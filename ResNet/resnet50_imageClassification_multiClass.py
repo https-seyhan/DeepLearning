@@ -17,7 +17,6 @@ from imagenet_utils import decode_predictions
 from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 
-
 img_path = '/home/saul/pythontraining/imageClassification/handwriting2.jpg'
 img = image.load_img(img_path, target_size=(224, 224))
 x = image.img_to_array(img)
