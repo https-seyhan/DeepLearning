@@ -57,7 +57,6 @@ def pad_trunc(data, maxlen):
         else:
             temp = sample
         new_data.append(temp)
-
     return new_data
 
 # this function is for getting the training dataset
