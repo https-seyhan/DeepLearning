@@ -25,7 +25,6 @@ X_train = sequence.pad_sequences(X_train, maxlen=maxlen)
 X_test = sequence.pad_sequences(X_test, maxlen=maxlen)
 print(len(X_train))
 print(X_train[1])
-#print(X_train[1][188])
 
 #LSTM
 model = Sequential()
