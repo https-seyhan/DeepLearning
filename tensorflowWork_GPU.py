@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jun 22 11:25:44 2019
-
 @author: saul
 """
 # tesnserflow test on GPU and CPU
