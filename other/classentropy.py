@@ -12,8 +12,7 @@ class Entropy:
     
     def __init__(self, prain=None, pshine = None, p_rain_g_month = None):
         if prain is None:
-            self.prain = []
-            
+            self.prain = []  
         elif pshine is None:
             self.pshine = []
         elif p_rain_g_month is None:
