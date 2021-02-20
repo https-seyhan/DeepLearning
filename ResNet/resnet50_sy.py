@@ -290,7 +290,6 @@ def ResNet50(include_top=True, weights='imagenet',
                               'at ~/.keras/keras.json.')
     return model
 
-
 if __name__ == '__main__':
     model = ResNet50(include_top=True, weights='imagenet')
 
