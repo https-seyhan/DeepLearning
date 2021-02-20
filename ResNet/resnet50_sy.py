@@ -14,7 +14,6 @@ from __future__ import print_function #for version discrepancies
 
 '''
 
-
 import numpy as np
 import warnings
 
