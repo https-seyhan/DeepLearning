@@ -156,8 +156,7 @@ def pad_trunc (data, maxlen):
 			
 	
 	
-if __name__ == '__main__':
-	
+if __name__ == '__main__':	
 	dataset = pre_process_data(traindata)
 	endtime = datetime.datetime.now()
 	
