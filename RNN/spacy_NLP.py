@@ -7,7 +7,6 @@ from random import shuffle
 
 nlp = spacy.load('en_core_web_md') #load pre-trained model
 tokenizer = Tokenizer(nlp.vocab) #generate tokenizer
-
 traindata = '/home/saul/deeplearning/aclImdb/train'
 
 def pre_process_data(filepath):
