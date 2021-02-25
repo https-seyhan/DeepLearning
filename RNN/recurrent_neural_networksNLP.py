@@ -169,7 +169,7 @@ if __name__ == '__main__':
 	rnnmodel(dataset, vectorised_data, expected)	
 	
 	endtime = datetime.datetime.now()
-	print('RNN Model Run:', endtime - starttime)
+	print('RNN Model Run:', endtime - starttime, ' Minutes')
 
 	#end time
 	endtime = datetime.datetime.now()
