@@ -3,7 +3,6 @@ import os
 import spacy
 from spacy.tokenizer import Tokenizer
 from spacy.lang.en import English
-
 from random import shuffle
 
 nlp = spacy.load('en_core_web_md') #load pre-trained model
