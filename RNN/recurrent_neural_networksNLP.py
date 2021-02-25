@@ -137,7 +137,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	print(model.summary())
 	
 	print("The RNN model is ", model)
-	
 	fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs)
 
 def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
