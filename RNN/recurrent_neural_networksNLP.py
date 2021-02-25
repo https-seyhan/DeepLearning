@@ -62,7 +62,6 @@ def tok_vec(dataset):
 		for token in tokens:	
 			try:
 				sample_vecs.append(nlp(str(token)).vector)
-				#print('A token :', token, 'Its vector :', len(nlp(str(token)).vector))
 			except KeyError:
 				pass
 		vectorized_data.append(sample_vecs)
