@@ -86,7 +86,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	
 	print("Start of the rnn !!!!! ")
 	split_point =  int(len(vectorised_data) * .8)
-	
 	print("End of Split !!!!! ")
 	
 	x_train = vectorised_data[:split_point]
