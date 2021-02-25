@@ -75,7 +75,6 @@ def collect_expected(dataset):
 	return expected
 	
 def rnnmodel(dataset, vectorised_data, expected):
-	
 	print('Size of the Dataset :', len(dataset))
 	
 	maxlen = 400 #400 tokens per example
