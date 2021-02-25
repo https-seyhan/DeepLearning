@@ -103,7 +103,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 	x_test = np.reshape(x_test, (len(x_test), maxlen, embedding_dims)) # sample, time steps, number of features
 	y_test = np.array(y_test)
 	
-	print("Start of the Model !!!!! ")
+	
 	
 	# Build RNN model
 	model = Sequential()
