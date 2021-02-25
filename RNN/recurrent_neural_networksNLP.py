@@ -93,7 +93,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	
 	
 	x_train = pad_trunc(x_train, maxlen)
-	
 	x_test = pad_trunc(x_test, maxlen)
 	
 	
