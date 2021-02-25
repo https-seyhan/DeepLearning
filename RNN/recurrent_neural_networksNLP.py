@@ -87,7 +87,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 	
 	x_train = vectorised_data[:split_point]
 
-	print(sum(len(x) for x in x_train))
+	
 	y_train = expected[:split_point]
 	
 	x_test = vectorised_data[split_point:]
