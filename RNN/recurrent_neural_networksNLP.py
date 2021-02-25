@@ -174,7 +174,7 @@ if __name__ == '__main__':
 	#end time
 	endtime = datetime.datetime.now()
 	
-	print("Duration of Execution : ", endtime - starttime)
+	print("Duration of Execution : ", endtime - starttime, ' Minutes')
 	
 	#print('Dataset ', dataset)
 	#vectorized_data = tokenize_and_vectorized(dataset)
