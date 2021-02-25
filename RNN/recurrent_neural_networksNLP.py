@@ -124,7 +124,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	
 	# Build RNN model
 	model = Sequential()
-	
 	model.add(SimpleRNN(num_neurons, return_sequences = True, input_shape=(maxlen, embedding_dims)))
 	model.add(Dropout(.2))
 	model.add(Flatten())
