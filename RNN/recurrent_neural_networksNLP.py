@@ -74,7 +74,7 @@ def collect_expected(dataset):
 	return expected
 	
 def rnnmodel(dataset, vectorised_data, expected):
-	
+	#LSTM's Hyperparameters
 	maxlen = 400 #400 tokens per example
 	maxlen = 50 #400 tokens per example
 	batch_size = 32
