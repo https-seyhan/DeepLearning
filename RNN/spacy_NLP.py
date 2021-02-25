@@ -38,7 +38,6 @@ def tokenize_and_vectorized(dataset):
 				sample_vecs.append(word_vectors[token])
 			except KeyError:
 				pass
-		
 		vectorized_data.append(sample_vecs)
 	
 	return vectorized_data
