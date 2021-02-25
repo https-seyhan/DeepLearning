@@ -3,7 +3,6 @@
 """
 @author: saul
 """
-
 import numpy as np
 import math
 
