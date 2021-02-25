@@ -129,7 +129,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	model.add(Dense(1, activation='sigmoid'))
 	model.compile('rmsprop', 'binary_crossentropy', metrics = ['accuracy'])
 	print(model.summary())
-	
 	print("The RNN model is ", model)
 	fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs)
 
