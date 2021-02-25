@@ -93,7 +93,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 	
 	
 	x_train = pad_trunc(x_train, maxlen)
-	#print("X train after padding ", x_train)
+	
 	x_test = pad_trunc(x_test, maxlen)
 	
 	print("End of pad_trunc !!!!! ")
