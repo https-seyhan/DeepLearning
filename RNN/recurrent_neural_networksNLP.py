@@ -96,7 +96,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	
 	x_test = pad_trunc(x_test, maxlen)
 	
-	print("End of pad_trunc !!!!! ")
 	
 	print('Maxlen ', maxlen)
 	print('Embedding dims ', embedding_dims)
