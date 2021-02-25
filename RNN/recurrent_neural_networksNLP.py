@@ -88,7 +88,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	num_neurons = 50
 	
 	print("Start of the rnn !!!!! ")
-	
 	split_point =  int(len(vectorised_data) * .8)
 	
 	print("End of Split !!!!! ")
