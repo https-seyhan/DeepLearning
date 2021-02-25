@@ -130,7 +130,6 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
 		json_file.write(model_structure)
 	
 	#model.save_weights("rnn_weights.h5)
-	
 	#print(fittedmodel)
 	
 
