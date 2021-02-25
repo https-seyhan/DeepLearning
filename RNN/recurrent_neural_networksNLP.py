@@ -157,7 +157,7 @@ if __name__ == '__main__':
 	dataset = pre_process_data(traindata)
 	endtime = datetime.datetime.now()
 	
-	print('Data prepocessing took :', starttime - endtime)
+	print('Data prepocessing took :', starttime - endtime, 'Minutes')
 	vectorised_data = tok_vec(dataset)
 	endtime = datetime.datetime.now()
 	print('Vectorisation took :', starttime - endtime)
