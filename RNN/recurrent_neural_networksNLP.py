@@ -85,7 +85,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	
 	split_point =  int(len(vectorised_data) * .8)
 	
-	
 	x_train = vectorised_data[:split_point]
 
 	print(sum(len(x) for x in x_train))
