@@ -95,7 +95,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 	x_test = vectorised_data[split_point:]
 	y_test = expected[split_point:]
 	
-	print("Start of pad_trunc !!!!! ")
+	
 	x_train = pad_trunc(x_train, maxlen)
 	#print("X train after padding ", x_train)
 	x_test = pad_trunc(x_test, maxlen)
