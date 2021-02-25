@@ -2,10 +2,11 @@ import glob # The glob module finds all the pathnames matching a specified patte
 import os
 import numpy as np
 import spacy
+import datetime
 from spacy.tokenizer import Tokenizer # SpaCy Tokeniser. Different from sklearn CountVectorizer 
 from spacy.lang.en import English
 from random import shuffle, sample
-import datetime
+
 #RNN module
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, SimpleRNN
