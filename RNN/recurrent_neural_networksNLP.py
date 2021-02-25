@@ -91,9 +91,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 	print("End of Split !!!!! ")
 	
 	x_train = vectorised_data[:split_point]
-	print("Shape ", np.shape(x_train))
-	print(len(x_train))
-	#print(len(x_train[1]))
+
 	print(sum(len(x) for x in x_train))
 	#print('Size of the Training Dataset :', len(x_train))
 	y_train = expected[:split_point]
