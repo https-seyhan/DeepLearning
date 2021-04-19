@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-
-
 @author: saul
 """
 #Travel though all directories and sub-directories and grab images. Then convert images to text.
