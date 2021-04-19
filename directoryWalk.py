@@ -18,7 +18,6 @@ from os import listdir
 from os.path import isfile, join
 
 tesseract_cmd = 'tesseract'
-
 dirpath = '/home/saul/anaconda3/' 
 #dirpath = '/home/saul/pythontraining/'  
 dirpath = '/media/saul/UUI/GT4HistOCR(1)/' 
