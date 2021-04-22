@@ -117,7 +117,6 @@ x = Dense(256, activation='relu',name='fc-2')(x)
 x = Dropout(0.5)(x)
 # a softmax layer for 4 classes
 out = Dense(num_classes, activation='softmax',name='output_layer')(x)
-
 # this is the model we will train
 custom_resnet_model2 = Model(inputs=model.input, outputs=out)
 custom_resnet_model2.summary()
