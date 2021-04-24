@@ -70,7 +70,6 @@ def convertImageString(folders):
     #Remove empty lists
     #evidenceFiles  = [x for x in evidenceFiles if x !=[]]
     #print(folders[folder], " ",evidenceFiles, '\n')
-
     #evidenceFiles = [f for f in listdir(evidencepath) if isfile(join(evidencepath, f))]
     #script_path = os.path.dirname(os.path.realpath(__file__))
     #maps_path = os.path.join(script_path, evidencepath)
