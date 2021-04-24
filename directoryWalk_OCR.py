@@ -77,7 +77,6 @@ def convertImageString(folders):
     #script_path = os.path.dirname(os.path.realpath(__file__))
     #maps_path = os.path.join(script_path, evidencepath)
     
-
     a = PI.open("/home/saul/pythontraining/NLP/handwriting.jpg")
     b= image_to_string(a)
     #print(b)
