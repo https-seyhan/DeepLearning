@@ -4,7 +4,6 @@
 @author: saul
 """
 #Travel through all directories and sub-directories and grab images. Then convert images to text.
-
 import os 
 import glob
 data_list = [['']]
