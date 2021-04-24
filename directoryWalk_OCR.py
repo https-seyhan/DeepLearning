@@ -35,7 +35,7 @@ def convertImageString(folders):
         image_to_text = [['', '','']]    
         print("Folder ", folder)
         evidencepath = dirpath + folders[folder] + '/'
-        
+       
         #evidenceFiles = [file for file in listdir(evidencepath) if isfile(join(evidencepath,file))]
         #evidenceFiles = [file for file in glob.glob(evidencepath +"**/*.pl", recursive=True)]
         evidenceFiles = [file for file in glob.glob(evidencepath +"**/*nrm.png", recursive=True)]
