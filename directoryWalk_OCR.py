@@ -3,7 +3,7 @@
 """
 @author: saul
 """
-#Travel though all directories and sub-directories and grab images. Then convert images to text.
+#Travel through all directories and sub-directories and grab images. Then convert images to text.
 
 import os 
 import glob
