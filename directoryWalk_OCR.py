@@ -65,7 +65,7 @@ def convertImageString(folders):
                 img= img.point(lambda x:0 if x < 155 else 255, '1')
                 
                 ocrtext = pytesseract.image_to_string(img)
-             
+           
                 image_to_text_list.append([folders[folder],image.split('/')[-1], ocrtext.encode('utf-8') ])
                 
                 
