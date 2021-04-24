@@ -99,7 +99,6 @@ def getSubDirs(dir):
     dirs = [x for x in dirs if x !=[]]
     #print(dirs[0])
     #print("Number of directories", len(dirs[0])) #number of directories
-
     #print('var' in dirs)
     #print(dirs)
     #print("Direcrories ", dirs[0])
