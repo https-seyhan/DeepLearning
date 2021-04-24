@@ -58,7 +58,7 @@ def convertImageString(folders):
                 a = PI.open(image).convert("RGBA")
                 #print("Image ", image.split('/')[-1])
                 width, height = a.size
-             
+            
                 new_size = width*enlargesize, height*enlargesize
                 img = a.resize(new_size, PI.LANCZOS)
                 img = img.convert('L')
