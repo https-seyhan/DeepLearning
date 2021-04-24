@@ -78,7 +78,7 @@ def convertImageString(folders):
     
     a = PI.open("/home/saul/pythontraining/NLP/handwriting.jpg")
     b= image_to_string(a)
-  
+ 
     data_list.append([[b]])
     #convert list to dataframe
     bb = pd.DataFrame(data_list, columns=['text'])
