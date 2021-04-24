@@ -116,7 +116,6 @@ def getSubDirs(dir):
     files_grabbed = []
     for files in types:
         files_grabbed.extend(glob.glob(files))
-
 print(SplitTypes)
     
 if __name__ == '__main__':
