@@ -106,7 +106,7 @@ def getSubDirs(dir):
         for file_name in walk_output[-1]:
             SplitTypes.append(file_name.split(".")[-1])
     list(set(SplitTypes))  #remove duplicate elements in the list
-   
+  
     types = ['*.jpg', '*.pdf', '*.odg']
     files_grabbed = []
     for files in types:
