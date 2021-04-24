@@ -57,7 +57,7 @@ def convertImageString(folders):
                 #a = PI.open(evidencepath.format(image)).convert("RGBA")
                 a = PI.open(image).convert("RGBA")
                 #print("Image ", image.split('/')[-1])
-  
+ 
                 width, height = a.size
                 
                 new_size = width*enlargesize, height*enlargesize
