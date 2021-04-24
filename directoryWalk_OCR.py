@@ -96,7 +96,6 @@ def list_files(dir):
 def getSubDirs(dir):
     #print(dir)
     dirs = [x[1] for x in os.walk(dir)]
-
     #delete empty lists
     dirs = [x for x in dirs if x !=[]]
     #print(dirs[0])
