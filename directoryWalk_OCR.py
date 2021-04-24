@@ -66,7 +66,7 @@ def convertImageString(folders):
                 ocrtext = pytesseract.image_to_string(img)
                 image_to_text_list.append([folders[folder],image.split('/')[-1], ocrtext.encode('utf-8') ])
         
-               
+              
         print("Image to Text ", image_to_text_list)
         evidences = pd.DataFrame(image_to_text_list, columns=['folderName', 'imageName', 'Text']) 
  
