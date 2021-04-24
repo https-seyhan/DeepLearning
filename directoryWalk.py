@@ -46,7 +46,7 @@ def convertImageString(folders):
         if evidenceFiles != []:
             for image in evidenceFiles:
                 #print(folders[folder], " ", image, '\n')
- 
+
                 image_list.append(image)
             
             imagelenght = len(image_list)
