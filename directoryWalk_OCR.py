@@ -121,7 +121,6 @@ def getSubDirs(dir):
 
 print(SplitTypes)
     
-
 if __name__ == '__main__':
     print("Test")
     getSubDirs(dirpath)
