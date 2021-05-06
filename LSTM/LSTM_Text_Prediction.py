@@ -40,7 +40,6 @@ df.loc[df['Product'] == 'Virtual currency', 'Product'] = 'Money transfer, virtua
 df = df[df.Product != 'Other financial service']
 df['Product'].value_counts().sort_values(ascending=False).iplot(kind='bar', yTitle='Number of Complaints', 
                                                                 title='Number complaints in each product')
-
 def print_plot(index):
     example = df[df.index == index][['Consumer complaint narrative', 'Product']].values[0]
     if len(example) > 0:
