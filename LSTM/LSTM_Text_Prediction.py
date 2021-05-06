@@ -18,9 +18,7 @@ from keras.layers import Dropout
 from nltk.corpus import stopwords
 from nltk import word_tokenize
 from bs4 import BeautifulSoup
-import plotly.graph_objs as go
-import plotly.plotly as py
-import cufflinks
+
 from IPython.core.interactiveshell import InteractiveShell
 import plotly.figure_factory as ff
 InteractiveShell.ast_node_interactivity = 'all'
