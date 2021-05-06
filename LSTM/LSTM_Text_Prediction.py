@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from keras.utils.np_utils import to_categorical
 from keras.callbacks import EarlyStopping
 from keras.layers import Dropout
-import re
+
 from nltk.corpus import stopwords
 from nltk import word_tokenize
 STOPWORDS = set(stopwords.words('english'))
