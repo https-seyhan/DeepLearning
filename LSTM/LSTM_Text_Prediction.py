@@ -23,7 +23,6 @@ from nltk.corpus import stopwords
 from nltk import word_tokenize
 from bs4 import BeautifulSoup
 from IPython.core.interactiveshell import InteractiveShell
-
 from plotly.offline import iplot
 cufflinks.go_offline()
 cufflinks.set_config_file(world_readable=True, theme='pearl')
