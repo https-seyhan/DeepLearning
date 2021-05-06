@@ -22,7 +22,7 @@ from nltk.corpus import stopwords
 from nltk import word_tokenize
 from bs4 import BeautifulSoup
 from IPython.core.interactiveshell import InteractiveShell
-import plotly.figure_factory as ff
+
 InteractiveShell.ast_node_interactivity = 'all'
 from plotly.offline import iplot
 cufflinks.go_offline()
