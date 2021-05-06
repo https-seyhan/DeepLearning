@@ -27,7 +27,7 @@ InteractiveShell.ast_node_interactivity = 'all'
 from plotly.offline import iplot
 cufflinks.go_offline()
 cufflinks.set_config_file(world_readable=True, theme='pearl')
-
+STOPWORDS = set(stopwords.words('english'))
 
 df = pd.read_csv('consumer_complaints_small.csv')
 
