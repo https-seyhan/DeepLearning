@@ -10,6 +10,7 @@ import re
 import plotly.graph_objs as go
 import plotly.plotly as py
 import cufflinks
+import plotly.figure_factory as ff
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import Sequential
