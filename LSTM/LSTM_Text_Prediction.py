@@ -30,7 +30,6 @@ STOPWORDS = set(stopwords.words('english'))
 InteractiveShell.ast_node_interactivity = 'all'
 df = pd.read_csv('consumer_complaints_small.csv')
 
-
 df.info()
 
 df.Product.value_counts()
