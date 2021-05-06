@@ -58,7 +58,6 @@ STOPWORDS = set(stopwords.words('english'))
 def clean_text(text):
     """
         text: a string
-
         return: modified initial string
     """
     text = text.lower() # lowercase text
