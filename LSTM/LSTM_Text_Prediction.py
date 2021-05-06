@@ -68,7 +68,6 @@ def clean_text(text):
     text = ' '.join(word for word in text.split() if word not in STOPWORDS) # remove stopwors from text
     return text
 df['Consumer complaint narrative'] = df['Consumer complaint narrative'].apply(clean_text)
-
 df['Consumer complaint narrative'] = df['Consumer complaint narrative'].str.replace('\d+', '')
 
 
