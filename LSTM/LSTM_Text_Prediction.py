@@ -70,7 +70,6 @@ def clean_text(text):
 df['Consumer complaint narrative'] = df['Consumer complaint narrative'].apply(clean_text)
 df['Consumer complaint narrative'] = df['Consumer complaint narrative'].str.replace('\d+', '')
 
-
 print_plot(10)
 print_plot(100)
 
