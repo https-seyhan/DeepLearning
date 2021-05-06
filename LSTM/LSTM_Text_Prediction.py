@@ -17,7 +17,7 @@ from keras.callbacks import EarlyStopping
 from keras.layers import Dropout
 from nltk.corpus import stopwords
 from nltk import word_tokenize
-STOPWORDS = set(stopwords.words('english'))
+
 from bs4 import BeautifulSoup
 import plotly.graph_objs as go
 import plotly.plotly as py
