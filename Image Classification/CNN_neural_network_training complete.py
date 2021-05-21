@@ -15,7 +15,6 @@ x_test /= 255
 # Convert class vectors to binary class matrices
 y_train = keras.utils.to_categorical(y_train, 10)
 y_test = keras.utils.to_categorical(y_test, 10)
-
 # Create a model and add layers
 model = Sequential()
 
