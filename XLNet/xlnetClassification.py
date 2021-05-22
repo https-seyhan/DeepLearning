@@ -7,6 +7,7 @@ import math
 import numpy as np
 import torch #pytorch
 import os
+import torch.nn.functional as F
 from tqdm import tqdm,trange
 from torch.optim import Adam
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
