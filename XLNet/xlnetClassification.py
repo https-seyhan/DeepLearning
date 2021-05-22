@@ -28,7 +28,6 @@ df_data.labels.unique()
 df_data.labels.value_counts()
 
 #Parser data into document structure.
-
 # Get sentence data
 sentences = df_data.texts.to_list() # convert dataframe to list
 sentences[0]
