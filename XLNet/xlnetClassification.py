@@ -38,7 +38,6 @@ labels = df_data.labels.to_list()
 print(labels[0])
 
 # Generate Class Labels.
-
 #Make TAG name into index for training
 # Set a dict for mapping id to tag name
 #tag2idx = {t: i for i, t in enumerate(tags_vals)}
