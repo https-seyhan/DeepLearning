@@ -80,7 +80,6 @@ tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 #This process is greately different from BERT
 
 max_len  = 64
-
 full_input_ids = []
 full_input_masks = []
 full_segment_ids = []
