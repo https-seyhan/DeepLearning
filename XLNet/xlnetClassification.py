@@ -18,7 +18,6 @@ from sklearn.metrics import classification_report # to mesure the accuracy of th
 
 os.chdir('/home/saul/xlnet/')
 data_file_address = "text_classification_dataset.csv"
-
 df_data = pd.read_csv(data_file_address,sep=",",encoding="utf-8",names=['labels','texts'])
 
 df_data.columns # get variables of the dataset of the modelling.
