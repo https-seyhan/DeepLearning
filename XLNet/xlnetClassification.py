@@ -105,7 +105,7 @@ for i,sentence in enumerate(sentences):
    
     tokens = []
     segment_ids = []
-  
+ 
     for token in tokens_a:
         tokens.append(token)
         segment_ids.append(SEG_ID_A)
