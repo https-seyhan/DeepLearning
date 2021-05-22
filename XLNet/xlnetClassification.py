@@ -5,7 +5,6 @@ import os
 import pandas as pd
 import math
 import numpy as np
-
 import torch #pytorch
 import os
 from tqdm import tqdm,trange
@@ -14,7 +13,7 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler, Sequentia
 from sklearn.model_selection import train_test_split
 import torch.nn.functional as F
 from pytorch_transformers import (XLNetConfig, XLNetForSequenceClassification, XLNetTokenizer)
-
+from sklearn.metrics import classification_report # to mesure the accuracy of the model
 #XLNet with Pytorch
 
 os.chdir('/home/saul/xlnet/')
