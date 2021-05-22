@@ -32,7 +32,6 @@ df_data.labels.value_counts()
 sentences = df_data.texts.to_list() # convert dataframe to list
 sentences[0]
 
-
 # Get tag labels data
 labels = df_data.labels.to_list()
 print(labels[0])
