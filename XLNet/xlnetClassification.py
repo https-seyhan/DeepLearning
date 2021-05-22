@@ -71,7 +71,6 @@ vocabulary = 'xlnet-base-cased-spiece.model'
 # With cased model, set do_lower_case = False
 tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
-
 #Set text input embedding
 
 #    token id embedding
