@@ -34,7 +34,7 @@ def pre_process_data(filepath):
 	dataset = sample(dataset, 100) #number of samples to be used
 	shuffle(dataset)
 	return dataset
-	
+
 def tokenize_and_vectorized(dataset):	
 	vectorized_data = []	
 	for sample in dataset:
