@@ -14,7 +14,6 @@ from keras.layers import Dense, Dropout, Flatten, SimpleRNN
 #start time. count process duration.
 starttime = datetime.datetime.now()
 print(starttime)
-
 nlp = spacy.load('en_core_web_md') #load pre-trained model
 tokenizer = Tokenizer(nlp.vocab) #generate tokenizer
 traindata = '/home/saul/deeplearning/aclImdb/train'
