@@ -93,7 +93,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 
 	x_train= np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
 	y_train = np.array(y_train)
-	
+
 	x_test = np.reshape(x_test, (len(x_test), maxlen, embedding_dims)) # sample, time steps, number of features
 	y_test = np.array(y_test)
 	
