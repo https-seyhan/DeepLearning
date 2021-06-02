@@ -121,7 +121,6 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
 	model_structure = model.to_json()
 	with open("simplernn_model.json", "w") as json_file:
 		json_file.write(model_structure)
-
 	#model.save_weights("rnn_weights.h5)
 	#print(fittedmodel)
 
