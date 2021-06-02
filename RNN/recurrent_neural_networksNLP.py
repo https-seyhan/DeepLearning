@@ -127,7 +127,7 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
 def pad_trunc (data, maxlen):
 	new_data = []
 	zero_vector = []
-	
+
 	for _ in range(len(data[0][0])):
 		zero_vector.append(0.0)
 		
