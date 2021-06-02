@@ -67,7 +67,7 @@ def collect_expected(dataset):
 	for sample in dataset:
 		expected.append(sample[0])
 	return expected
-	
+
 def rnnmodel(dataset, vectorised_data, expected):
 	#LSTM's Hyperparameters
 	maxlen = 400 #400 tokens per example
