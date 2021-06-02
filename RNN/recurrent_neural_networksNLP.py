@@ -61,7 +61,7 @@ def tok_vec(dataset):
 				pass
 		vectorized_data.append(sample_vecs)
 	return vectorized_data
-	
+
 def collect_expected(dataset):
 	expected = []
 	for sample in dataset:
