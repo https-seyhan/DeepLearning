@@ -155,7 +155,7 @@ if __name__ == '__main__':
 	expected = collect_expected(dataset)
 	endtime = datetime.datetime.now()
 	print('Collection took :', endtime - starttime, ' Minutes')
-	
+
 	rnnmodel(dataset, vectorised_data, expected)	
 	
 	endtime = datetime.datetime.now()
