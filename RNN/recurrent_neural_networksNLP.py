@@ -77,7 +77,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	embedding_dims = 300 # word vectors are 300 elements long
 	epochs = 2
 	num_neurons = 50
-
 	split_point =  int(len(vectorised_data) * .8)
 	
 	x_train = vectorised_data[:split_point]
