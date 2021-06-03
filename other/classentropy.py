@@ -15,7 +15,7 @@ class Entropy:
             self.pshine = []
         elif p_rain_g_month is None:
             self.p_rain_g_month = []
-                 
+                
         self.prain =list(prain /100) 
         self.pshine = list(1 - prain / 100)
         self.p_rain_g_month = np.column_stack([self.prain, self.pshine])
