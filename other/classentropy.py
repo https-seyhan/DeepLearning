@@ -33,7 +33,6 @@ entropy.calconditional()
 print(entropy.entropyprob)
 print(max(entropy.indentropies))
 
-
 #print(entropy.prain)
 #print(entropy.pshine)
 #print(entropy.p_rain_g_month)
