@@ -21,7 +21,7 @@ class Entropy:
         self.entropyprob = 0.0
         self.indentropies = []
         self.period= 12
- 
+
     def calconditional(self):    
         for i in range(self.period):
             sumentropy = (-1/self.period)*(self.p_rain_g_month[i, 0]*math.log(self.p_rain_g_month[i,0], 2) + self.p_rain_g_month[i,1]*math.log(self.p_rain_g_month[i,1],2))
