@@ -28,7 +28,7 @@ class Entropy:
             self.entropyprob += sumentropy
             self.indentropies.append(sumentropy)
             
-                    
+                   
 entropy = Entropy(np.array([25, 27, 24, 18, 14, 11, 7, 8, 10, 15, 18, 23]) )
 entropy.calconditional()
 print(entropy.entropyprob)
