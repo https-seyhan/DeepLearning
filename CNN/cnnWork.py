@@ -17,7 +17,6 @@ Compatible with: spaCy v2.0.0+
 """
 import plac
 from __future__ import unicode_literals, print_function
-
 import random
 from pathlib import Path
 import thinc.extra.datasets
