@@ -2,7 +2,6 @@ import numpy as np
 from keras.models import model_from_json
 from pathlib import Path
 from keras.preprocessing import image
-
 from keras.applications import vgg16
 
 # Load the json file that contains the model's structure
