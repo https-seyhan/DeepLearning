@@ -29,6 +29,7 @@ from spacy.util import minibatch, compounding
     n_iter=("Number of training iterations", "option", "n", int),
     init_tok2vec=("Pretrained tok2vec weights", "option", "t2v", Path)
 )
+
 def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None):
     if output_dir is not None:
         output_dir = Path(output_dir)
