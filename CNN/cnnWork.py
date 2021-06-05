@@ -23,7 +23,7 @@ from __future__ import unicode_literals, print_function
 from pathlib import Path
 import thinc.extra.datasets
 
-import spacy
+
 from spacy.util import minibatch, compounding
 
 
