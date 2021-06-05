@@ -3,7 +3,6 @@
 """
 @author: saul
 """
-
 """Train a convolutional neural network text classifier on the
 IMDB dataset, using the TextCategorizer component. The dataset will be loaded
 automatically via Thinc's built-in dataset loader. The model is added to
