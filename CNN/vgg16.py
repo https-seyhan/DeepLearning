@@ -10,7 +10,6 @@ model_structure = f.read_text()
 
 # Recreate the Keras model object from the json data
 model = model_from_json(model_structure)
-
 # Re-load the model's trained weights
 model.load_weights("model_weights.h5")
 
