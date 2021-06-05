@@ -1,4 +1,4 @@
-
+import numpy as np
 from keras.models import model_from_json
 from pathlib import Path
 from keras.preprocessing import image
