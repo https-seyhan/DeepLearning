@@ -5,7 +5,6 @@ from hachoir.metadata import extractMetadata
 filename = "IMG.jpg"
 parser = createParser(filename)
 metadata = extractMetadata(parser)
-
 # Convert image metadata to text
 for line in metadata.exportPlaintext():
     print(line)
