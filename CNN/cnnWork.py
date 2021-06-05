@@ -22,7 +22,6 @@ from pathlib import Path
 import thinc.extra.datasets
 from spacy.util import minibatch, compounding
 
-
 @plac.annotations(
     model=("Model name. Defaults to blank 'en' model.", "option", "m", str),
     output_dir=("Optional output directory", "option", "o", Path),
