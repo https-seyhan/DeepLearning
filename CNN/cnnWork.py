@@ -11,7 +11,6 @@ see the documentation:
 * Training: https://spacy.io/usage/training
 Compatible with: spaCy v2.0.0+
 """
-
 import plac
 import random
 import spacy
