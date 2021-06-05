@@ -41,6 +41,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
     else:
         nlp = spacy.blank("en")  # create blank Language class
         print("Created blank 'en' model")
+        
     # add the text classifier to the pipeline if it doesn't exist
     # nlp.create_pipe works for built-ins that are registered with spaCy
     if "textcat" not in nlp.pipe_names:
