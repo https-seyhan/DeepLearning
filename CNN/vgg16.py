@@ -35,5 +35,6 @@ results = model.predict(features)
 
 # Since we are only testing one image with possible class, we only need to check the first result's first element
 single_result = results[0][0]
+
 # Print the result
 print("Likelihood that this image contains a dog: {}%".format(int(single_result * 100)))
