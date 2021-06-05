@@ -66,7 +66,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
     (train_texts, train_cats), (dev_texts, dev_cats) = load_data()
     train_texts = train_texts[:n_texts]
     train_cats = train_cats[:n_texts]
-    
+   
     print(
         "Using {} examples ({} training, {} evaluation)".format(
             n_texts, len(train_texts), len(dev_texts)
