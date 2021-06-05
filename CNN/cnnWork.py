@@ -76,7 +76,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
 
     # get names of other pipes to disable them during training
     other_pipes = [pipe for pipe in nlp.pipe_names if pipe != "textcat"]
- 
+
     with nlp.disable_pipes(*other_pipes):  # only train textcat
         optimizer = nlp.begin_training()
         if init_tok2vec is not None:
