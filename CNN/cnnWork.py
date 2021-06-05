@@ -15,6 +15,7 @@ see the documentation:
 
 Compatible with: spaCy v2.0.0+
 """
+
 from __future__ import unicode_literals, print_function
 import plac
 import random
