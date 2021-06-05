@@ -19,7 +19,6 @@ import plac
 import random
 import spacy
 from __future__ import unicode_literals, print_function
-
 from pathlib import Path
 import thinc.extra.datasets
 
