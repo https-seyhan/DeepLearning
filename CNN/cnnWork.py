@@ -135,7 +135,6 @@ def load_data(limit=0, split=0.8):
     split = int(len(train_data) * split)
     return (texts[:split], cats[:split]), (texts[split:], cats[split:])
 
-
 def evaluate(tokenizer, textcat, texts, cats):
     docs = (tokenizer(text) for text in texts)
     tp = 0.0  # True positives
