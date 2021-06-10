@@ -31,7 +31,6 @@ def pre_process_data(filepath):
 			dataset.append((pos_label, f.read()))
 
 	for filename in glob.glob(os.path.join(negative_path, '*.txt')):
-
 		with open(filename, 'r') as f:
 			dataset.append((neg_label, f.read()))	
 	dataset = sample(dataset, 100) #number of samples to be used
