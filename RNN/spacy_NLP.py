@@ -51,7 +51,7 @@ def tok_vec(dataset):
 				print('A token :', token, 'Its vector :', len(nlp(str(token)).vector))
 			except KeyError:
 				pass
-	
+
 	#doc = nlp(str(dataset[1]))
 	
 if __name__ == '__main__':
