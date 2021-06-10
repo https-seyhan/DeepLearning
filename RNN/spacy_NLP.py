@@ -25,7 +25,7 @@ def pre_process_data(filepath):
 			dataset.append((neg_label, f.read()))
 	shuffle(dataset)
 	return dataset
-	
+
 def tokenize_and_vectorized(dataset):
 	vectorized_data = []
 	for sample in dataset:
