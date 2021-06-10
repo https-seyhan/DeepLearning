@@ -80,7 +80,6 @@ def rnnmodel(dataset, vectorised_data, expected):
 	epochs = 2
 	num_neurons = 50
 	split_point =  int(len(vectorised_data) * .8)
-
 	x_train = vectorised_data[:split_point]
 	y_train = expected[:split_point]
 
