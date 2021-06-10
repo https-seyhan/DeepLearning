@@ -21,7 +21,6 @@ dirpath = '/home/saul/anaconda3/'
 #dirpath = '/home/saul/pythontraining/'  
 dirpath = '/media/saul/UUI/GT4HistOCR(1)/' 
 outputpath = '/home/saul/pythontraining/NLP/'                                                                                                       
-
 enlargesize = 1
 
 def convertImageString(folders):
