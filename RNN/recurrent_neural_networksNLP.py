@@ -23,6 +23,7 @@ def pre_process_data(filepath):
 	negative_path = os.path.join(filepath, 'neg')
 	pos_label = 1
 	neg_label = 0
+	
 	dataset = []
 	# find all files wirg .txt extension
 	for filename in glob.glob(os.path.join(positive_path, '*.txt')):
