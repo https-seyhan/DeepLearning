@@ -25,7 +25,7 @@ def pre_process_data(filepath):
 	neg_label = 0
 	dataset = []
 
-	# find all files wirg .txt extension
+	# find all files with.txt extension
 	for filename in glob.glob(os.path.join(positive_path, '*.txt')):
 		with open(filename, 'r') as f:
 			dataset.append((pos_label, f.read()))
