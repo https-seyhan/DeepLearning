@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Mar  4 15:03:15 2019
-
 @author: saul
 """
 #This is an example of how to calculate logloss for Machine Learning
