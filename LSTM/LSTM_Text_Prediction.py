@@ -105,7 +105,6 @@ print(model.summary())
 
 epochs = 5 # number of iterations
 batch_size = 64 # number of training obs in each epoch
-
 history = model.fit(X_train, Y_train, epochs=epochs, batch_size=batch_size,validation_split=0.1,callbacks=[EarlyStopping(monitor='val_loss', patience=3, min_delta=0.0001)])
 
 accr = model.evaluate(X_test,Y_test)
