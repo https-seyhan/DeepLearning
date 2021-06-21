@@ -123,7 +123,6 @@ def conv_block(input_tensor, kernel_size, filters, stage, block, strides=(2, 2))
     x = Activation('relu')(x)
     return x
 
-
 def ResNet50(include_top=True, weights='imagenet',
              input_tensor=None, input_shape=None,
              pooling=None,
