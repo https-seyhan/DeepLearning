@@ -87,7 +87,6 @@ X = tokenizer.texts_to_sequences(df['Consumer complaint narrative'].values)
 X = pad_sequences(X, maxlen=MAX_SEQUENCE_LENGTH)
 
 print('Shape of data tensor:', X.shape)
-
 Y = pd.get_dummies(df['Product']).values
 print('Shape of label tensor:', Y.shape)
 
