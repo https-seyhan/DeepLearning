@@ -30,7 +30,7 @@ def logloss(true_label, predicted, eps=1e-15):
         return -log(1- p)
     
 if __name__ == "__main__":
- 
+
     for i in np.arange(100, 0, -0.1):
         
         print(logloss(1, i))
