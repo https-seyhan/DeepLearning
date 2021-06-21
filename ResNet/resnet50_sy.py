@@ -79,7 +79,6 @@ def identity_block(input_tensor, kernel_size, filters, stage, block):
     x = Activation('relu')(x)
     return x
 
-
 def conv_block(input_tensor, kernel_size, filters, stage, block, strides=(2, 2)):
     """conv_block is the block that has a conv layer at shortcut
 
