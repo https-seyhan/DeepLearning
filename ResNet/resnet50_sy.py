@@ -287,7 +287,6 @@ def ResNet50(include_top=True, weights='imagenet',
 
 if __name__ == '__main__':
     model = ResNet50(include_top=True, weights='imagenet')
-
     #img_path = '/home/saul/pythontraining/imageClassification/handwriting.jpg'
     img_path = '/home/saul/pythontraining/imageClassification/handwriting2.jpg'
     img = image.load_img(img_path, target_size=(224, 224))
