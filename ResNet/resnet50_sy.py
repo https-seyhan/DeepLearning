@@ -282,7 +282,7 @@ def ResNet50(include_top=True, weights='imagenet',
                               'For best performance, set '
                               '`image_data_format="channels_last"` in '
                               'your Keras config '
-                              'at ~/.keras/keras.json.')
+                             'at ~/.keras/keras.json.')
     return model
 
 if __name__ == '__main__':
