@@ -109,7 +109,7 @@ for i,sentence in enumerate(sentences):
     # Add <sep> token 
     tokens.append(SEP_ID)
     segment_ids.append(SEG_ID_A)
-  
+ 
    
     # Add <cls> token
     tokens.append(CLS_ID)
