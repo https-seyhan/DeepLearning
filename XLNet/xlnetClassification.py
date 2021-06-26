@@ -185,7 +185,6 @@ valid_dataloader = DataLoader(valid_data, sampler=valid_sampler, batch_size=batc
 
 #Train model
 #Load XLNet pre-trained model
-
 # In this document, contain confg(txt) and weight(bin) files
 model_file_address = 'xlnet-base-cased'
 
