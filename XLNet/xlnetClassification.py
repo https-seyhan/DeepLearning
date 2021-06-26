@@ -169,7 +169,6 @@ tr_segs = torch.tensor(tr_segs)
 val_segs = torch.tensor(val_segs)
 
 #Put data into data loader
-
 # Set batch num
 batch_num = 32
 
