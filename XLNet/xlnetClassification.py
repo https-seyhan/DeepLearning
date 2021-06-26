@@ -200,7 +200,6 @@ model.to(device);
 # Add multi GPU support
 if n_gpu >1:
     model = torch.nn.DataParallel(model)
-
 # Set epoch and grad max num
 epochs = 5
 max_grad_norm = 1.0
