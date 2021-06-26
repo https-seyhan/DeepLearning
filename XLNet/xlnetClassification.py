@@ -184,7 +184,6 @@ valid_sampler = SequentialSampler(valid_data)
 valid_dataloader = DataLoader(valid_data, sampler=valid_sampler, batch_size=batch_num)
 
 #Train model
-
 #Load XLNet pre-trained model
 
 # In this document, contain confg(txt) and weight(bin) files
@@ -197,7 +196,6 @@ model_file_address = 'xlnet-base-cased'
 
 #Create XLNet model
 model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_labels=len(tag2idx))
-
 model;
 
 # Set model to GPU,if you are using GPU machine
