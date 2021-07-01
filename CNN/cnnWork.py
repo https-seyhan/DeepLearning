@@ -81,7 +81,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
         if init_tok2vec is not None:
             with init_tok2vec.open("rb") as file_:
                 textcat.model.tok2vec.from_bytes(file_.read())
-          
+         
         print("Training the model...")
         print("{:^5}\t{:^5}\t{:^5}\t{:^5}".format("LOSS", "P", "R", "F"))
         batch_sizes = compounding(4.0, 32.0, 1.001)
