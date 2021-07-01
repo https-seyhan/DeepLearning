@@ -162,6 +162,5 @@ def evaluate(tokenizer, textcat, texts, cats):
         f_score = 2 * (precision * recall) / (precision + recall)
     return {"textcat_p": precision, "textcat_r": recall, "textcat_f": f_score}
 
-
 if __name__ == "__main__":
     plac.call(main)
