@@ -108,7 +108,6 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
     test_text = "This movie sucked"
     doc = nlp(test_text)
     print(test_text, doc.cats)
-
     if output_dir is not None:
         with nlp.use_params(optimizer.averages):
             nlp.to_disk(output_dir)
