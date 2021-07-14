@@ -147,7 +147,6 @@ if __name__ == '__main__':
 	vectorised_data = tok_vec(dataset)
 	endtime = datetime.datetime.now()
 	print('Vectorisation took :', starttime - endtime)
-
 	expected = collect_expected(dataset)
 	endtime = datetime.datetime.now()
 	print('Collection took :', endtime - starttime, ' Minutes')
