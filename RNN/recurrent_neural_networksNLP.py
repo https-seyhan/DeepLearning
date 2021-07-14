@@ -73,7 +73,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 	#maxlen = 400 #400 tokens per example
 	maxlen = 50 #400 tokens per example
 	batch_size = 32
-	embedding_dims = 300 # word vectors are 300 elements long
+	#embedding_dims = 300 # word vectors are 300 elements long
 	embedding_dims = 300 # word vectors are 300 elements long
 	epochs = 2
 	num_neurons = 50
