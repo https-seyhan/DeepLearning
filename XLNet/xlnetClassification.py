@@ -119,6 +119,7 @@ for i,sentence in enumerate(sentences):
 
     # The mask has 0 for real tokens and 1 for padding tokens. Only real
     # tokens are attended to.
+    
     input_mask = [0] * len(input_ids)
     # Zero-pad up to the sequence length at fornt
    
