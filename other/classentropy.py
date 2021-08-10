@@ -5,7 +5,6 @@
 """
 import numpy as np
 import math
-
 # calculate Entropy
 class Entropy:
 
