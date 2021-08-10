@@ -21,7 +21,7 @@ def logloss(true_label, predicted, eps=1e-15):
     print("P values is :", p)
     probs.append(p)
     #print (true_label)
-   
+  
     if true_label == 1:
         print("True Label is 1")
         logprobs.append(-log(p))
