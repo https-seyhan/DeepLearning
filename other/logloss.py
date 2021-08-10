@@ -17,7 +17,6 @@ probs = []
 logprobs = []
 def logloss(true_label, predicted, eps=1e-15):
     p =  np.clip(predicted, eps, 1 - eps)
-
     print("P values is :", p)
     probs.append(p)
     #print (true_label)
