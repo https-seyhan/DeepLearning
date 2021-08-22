@@ -15,7 +15,7 @@ def pre_process_data(filepath):
 	pos_label = 1
 	neg_label = 0
 	dataset = []
-	
+
 	for filename in glob.glob(os.path.join(positive_path, '*.txt')):
 		with open(filename, 'r') as f:
 			dataset.append((pos_label, f.read()))
