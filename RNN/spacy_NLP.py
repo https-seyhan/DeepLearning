@@ -27,6 +27,7 @@ def pre_process_data(filepath):
 
 def tokenize_and_vectorized(dataset):
 	vectorized_data = []
+	
 	for sample in dataset:
 		tokens = tokenizer.tokenize(sample[1]) #tokize sentences 
 		sample_vecs = []
