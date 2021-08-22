@@ -52,6 +52,7 @@ def tok_vec(dataset):
 			except KeyError:
 				pass
 	#doc = nlp(str(dataset[1]))
+	
 if __name__ == '__main__':
 	dataset = pre_process_data(traindata)
 	tok_vec(dataset) # Tokenise and Vectorise the data
