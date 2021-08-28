@@ -126,7 +126,6 @@ out = Dense(num_classes, activation='softmax',name='output_layer')(x)
 
 # this is the model we will train
 custom_resnet_model2 = Model(inputs=model.input, outputs=out)
-
 custom_resnet_model2.summary()
 
 for layer in custom_resnet_model2.layers[:-6]:
