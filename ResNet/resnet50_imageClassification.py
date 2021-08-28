@@ -74,6 +74,7 @@ Y = np_utils.to_categorical(labels, num_classes)
 x,y = shuffle(img_data,Y, random_state=2)
 # Split the dataset
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=2)
+
 ###########################################################################################################################
 # Custom_resnet_model_1
 #Training the classifier alone
