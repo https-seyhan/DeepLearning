@@ -49,6 +49,7 @@ print("Len Image ", len(img_data_list))
 #Convert Images to Array
 img_data = np.array(img_data_list)
 print(img_data)
+
 #img_data = img_data.astype('float32')
 print ("Image Data Shape ", img_data.shape)
 img_data=np.rollaxis(img_data,1,0)
