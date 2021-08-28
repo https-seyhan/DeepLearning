@@ -43,7 +43,6 @@ for dataset in data_dir_list:
 		x = preprocess_input(x)
 		print('Input image shape:', x.shape)
 		img_data_list.append(x)
-
 #Convert Images to Array
 img_data = np.array(img_data_list)
 #img_data = img_data.astype('float32')
