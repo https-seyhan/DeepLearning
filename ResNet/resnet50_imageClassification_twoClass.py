@@ -81,6 +81,7 @@ x,y = shuffle(img_data,Y, random_state=2)
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=2)
 
 ###########################################################################################################################
+
 # Custom_resnet_model_1
 #Training the classifier alone
 image_input = Input(shape=(224, 224, 3))
