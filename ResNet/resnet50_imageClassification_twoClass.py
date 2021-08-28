@@ -112,7 +112,6 @@ print('Training time: %s' % (t - time.time()))
 print("[INFO] loss={:.4f}, accuracy: {:.4f}%".format(loss,accuracy * 100))
 
 ###########################################################################################################################
-
 # Fine tune the resnet 50
 #image_input = Input(shape=(224, 224, 3))
 model = ResNet50(weights='imagenet',include_top=False)
