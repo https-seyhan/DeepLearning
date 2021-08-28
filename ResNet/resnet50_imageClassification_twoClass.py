@@ -133,7 +133,6 @@ for layer in custom_resnet_model2.layers[:-6]:
 	layer.trainable = False
 
 custom_resnet_model2.layers[-1].trainable
-
 custom_resnet_model2.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 
 t=time.time()
