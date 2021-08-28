@@ -166,7 +166,6 @@ plt.grid(True)
 plt.legend(['train','val'])
 #print plt.style.available # use bmh, classic,ggplot for big pictures
 plt.style.use(['classic'])
-
 plt.figure(2,figsize=(7,5))
 plt.plot(xc,train_acc)
 plt.plot(xc,val_acc)
