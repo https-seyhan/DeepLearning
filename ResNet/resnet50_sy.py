@@ -6,7 +6,6 @@ from __future__ import print_function #for version discrepancies
 """
 # -*- coding: utf-8 -*-
 '''ResNet50 model for Keras.
-
 # Reference:
 - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
 
