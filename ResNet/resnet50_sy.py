@@ -86,7 +86,6 @@ def conv_block(input_tensor, kernel_size, filters, stage, block, strides=(2, 2))
         block: 'a','b'..., current block label, used for generating layer names
     # Returns
         Output tensor for the block.
-
     Note that from stage 3, the first conv layer at main path is with strides=(2,2)
     And the shortcut should have strides=(2,2) as well
     """
