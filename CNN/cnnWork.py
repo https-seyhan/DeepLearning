@@ -89,7 +89,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
             # batch up the examples using spaCy's minibatch
             random.shuffle(train_data)
             batches = minibatch(train_data, size=batch_sizes)
-            
+           
             for batch in batches:
                 texts, annotations = zip(*batch)
                 nlp.update(texts, annotations, sgd=optimizer, drop=0.2, losses=losses)
