@@ -84,6 +84,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
         print("Training the model...")
         print("{:^5}\t{:^5}\t{:^5}\t{:^5}".format("LOSS", "P", "R", "F"))
         batch_sizes = compounding(4.0, 32.0, 1.001)
+        
         for i in range(n_iter):
             losses = {}
             # batch up the examples using spaCy's minibatch
