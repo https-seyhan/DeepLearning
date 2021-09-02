@@ -19,7 +19,6 @@ y_test = keras.utils.to_categorical(y_test, 10)
 
 # Create a model and add layers
 model = Sequential()
-
 #Initial Layer
 model.add(Conv2D(32, (3, 3), padding='same', input_shape=(32, 32, 3), activation="relu"))
 #Convolutional Layer
