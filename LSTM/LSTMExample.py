@@ -35,7 +35,6 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 
 #Training
 model.fit(X_train, y_train, batch_size=batch_size, verbose=1, nb_epoch=1, validation_data=(X_test, y_test))
-
 # Evaluation
 score = model.evaluate(X_test, y_test, batch_size = batch_size)
 print("Test Results :", zip(model.metrics_names, score))
