@@ -119,7 +119,6 @@ def ResNet50(include_top=True, weights='imagenet',
              pooling=None,
              classes=1000):
     """Instantiates the ResNet50 architecture.
-
     Optionally loads weights pre-trained
     on ImageNet. Note that when using TensorFlow,
     for best performance you should set
