@@ -191,7 +191,6 @@ def ResNet50(include_top=True, weights='imagenet',
     x = BatchNormalization(axis=bn_axis, name='bn_conv1')(x) # Normalize and scale inputs or activations
     x = Activation('relu')(x)
     x = MaxPooling2D((3, 3), strides=(2, 2))(x) #  Downsamples the input representation by taking the maximum value over the window defined by pool_size for each dimension along the features axis. The window is shifted by strides in each dimension.
-
     x = conv_block(x, 3, [64, 64, 256], stage=2, block='a', strides=(1, 1))
     x = identity_block(x, 3, [64, 64, 256], stage=2, block='b')
     x = identity_block(x, 3, [64, 64, 256], stage=2, block='c')
