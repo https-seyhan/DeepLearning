@@ -128,7 +128,6 @@ def ResNet50(include_top=True, weights='imagenet',
     TensorFlow and Theano. The data format
     convention used by the model is the one
     specified in your Keras config file.
-
     # Arguments
         include_top: whether to include the fully-connected
             layer at the top of the network.
