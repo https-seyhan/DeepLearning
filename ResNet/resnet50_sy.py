@@ -155,7 +155,6 @@ def ResNet50(include_top=True, weights='imagenet',
 
     # Returns
         A Keras model instance.
-
     # Raises
         ValueError: in case of invalid argument for `weights`,
             or invalid input shape.
