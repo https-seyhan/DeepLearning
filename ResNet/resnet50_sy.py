@@ -232,7 +232,6 @@ def ResNet50(include_top=True, weights='imagenet',
         inputs = img_input
     # Create model.
     model = Model(inputs, x, name='resnet50')
-
     # load weights
     if weights == 'imagenet':
         if include_top:
