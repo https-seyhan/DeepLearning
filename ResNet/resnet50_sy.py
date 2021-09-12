@@ -106,7 +106,6 @@ def conv_block(input_tensor, kernel_size, filters, stage, block, strides=(2, 2))
     shortcut = Conv2D(filters3, (1, 1), strides=strides,
                       name=conv_name_base + '1')(input_tensor)
     shortcut = BatchNormalization(axis=bn_axis, name=bn_name_base + '1')(shortcut)
-
     x = layers.add([x, shortcut])
     x = Activation('relu')(x)
     return x
