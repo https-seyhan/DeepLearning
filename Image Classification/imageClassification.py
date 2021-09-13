@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 
-
 @author: saul
 """
 from keras.datasets import mnist
