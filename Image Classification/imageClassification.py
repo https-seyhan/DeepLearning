@@ -5,7 +5,6 @@ Created on Sun Jul 28 10:30:03 2019
 
 @author: saul
 """
-
 from keras.datasets import mnist
 from keras import models 
 from keras import layers
