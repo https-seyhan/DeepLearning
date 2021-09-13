@@ -45,7 +45,7 @@ def print_plot(index):
         print(example[0])
         print('Product:', example[1])
 
-       print_plot(10)
+      print_plot(10)
 print_plot(100)
 
 df = df.reset_index(drop=True)
