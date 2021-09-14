@@ -100,7 +100,7 @@ for i,sentence in enumerate(sentences):
     # Tokenize sentence to token id list
     tokens_a = tokenizer.encode(sentence)
     # Trim the len of text
-   
+  
     if(len(tokens_a)>max_len-2):
         tokens_a = tokens_a[:max_len-2]
     tokens = []
@@ -117,7 +117,7 @@ for i,sentence in enumerate(sentences):
     tokens.append(CLS_ID)
     segment_ids.append(SEG_ID_CLS)
     input_ids = tokens
-    
+   
     # The mask has 0 for real tokens and 1 for padding tokens. Only real
     # tokens are attended to.
   
