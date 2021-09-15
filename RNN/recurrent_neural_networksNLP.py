@@ -93,7 +93,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 	x_train = pad_trunc(x_train, maxlen)
 	x_test = pad_trunc(x_test, maxlen)
 	print('Embedding dims ', embedding_dims)
-	
+
 	x_train= np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
 	y_train = np.array(y_train)
 
