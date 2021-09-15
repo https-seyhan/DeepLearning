@@ -88,7 +88,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 	
 	x_test = vectorised_data[split_point:]
 	y_test = expected[split_point:]
-	
+
 	x_train = pad_trunc(x_train, maxlen)
 	x_test = pad_trunc(x_test, maxlen)
 	print('Embedding dims ', embedding_dims)
