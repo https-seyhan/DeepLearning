@@ -25,7 +25,6 @@ class Entropy:
             sumentropy = (-1/self.period)*(self.p_rain_g_month[i, 0]*math.log(self.p_rain_g_month[i,0], 2) + self.p_rain_g_month[i,1]*math.log(self.p_rain_g_month[i,1],2))
             self.entropyprob += sumentropy
             self.indentropies.append(sumentropy)
-
 entropy = Entropy(np.array([25, 27, 24, 18, 14, 11, 7, 8, 10, 15, 18, 23]) )
 entropy.calconditional()
 print(entropy.entropyprob)
