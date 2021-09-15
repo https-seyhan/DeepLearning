@@ -55,7 +55,7 @@ def tokenize_and_vectorized(dataset):
 
 def tok_vec(dataset):
 	vectorized_data = []
-	
+
 	for sample in dataset:
 		tokens = tokenizer(sample[1])
 		sample_vecs = []
