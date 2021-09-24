@@ -3,7 +3,6 @@
 
 # In[1]:
 
-
 from keras.datasets import mnist
 from keras import models
 from keras import layers
