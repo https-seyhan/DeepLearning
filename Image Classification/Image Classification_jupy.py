@@ -18,7 +18,6 @@ len(test_labels)
 #test_images[0][10]
 test_labels
 
-
 # In[4]:
 
 network = models.Sequential()
