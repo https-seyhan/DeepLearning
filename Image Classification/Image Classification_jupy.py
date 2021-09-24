@@ -7,7 +7,6 @@ from keras.datasets import mnist
 from keras import models
 from keras import layers
 
-
 # In[2]:
 
 
