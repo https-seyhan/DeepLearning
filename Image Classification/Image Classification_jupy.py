@@ -13,7 +13,6 @@ from keras import layers
 
 # In[3]:
 
-
 len(test_labels)
 #test_images[0][10]
 test_labels
