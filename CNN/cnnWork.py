@@ -59,7 +59,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
     # add label to text classifier
     textcat.add_label("POSITIVE")
     textcat.add_label("NEGATIVE")
-
+    
     # load the IMDB dataset
     print("Loading IMDB data...")
     (train_texts, train_cats), (dev_texts, dev_cats) = load_data()
