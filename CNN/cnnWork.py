@@ -5,7 +5,7 @@
 """
 """Train a convolutional neural network text classifier on the
 IMDB dataset, using the TextCategorizer component. The dataset will be loaded
-automatically via  built-in dataset loader. The model is added to
+automatically via  a built-in dataset loader. The model is added to
 spacy.pipeline, and predictions are available via `doc.cats`. For more details,
 see the documentation:
 * Training: https://spacy.io/usage/training
