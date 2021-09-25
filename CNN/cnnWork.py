@@ -55,7 +55,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
     # otherwise, get it, so we can add labels to it
     else:
         textcat = nlp.get_pipe("textcat")
-
+        
     # add label to text classifier
     textcat.add_label("POSITIVE")
     textcat.add_label("NEGATIVE")
