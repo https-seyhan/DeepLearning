@@ -54,6 +54,7 @@ model.fit(
     validation_data=(x_test, y_test),
     shuffle=True
 )
+
 # Save neural network structure
 model_structure = model.to_json()
 f = Path("model_structure.json")
