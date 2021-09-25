@@ -70,6 +70,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
             n_texts, len(train_texts), len(dev_texts)
         )
     )
+    
     train_data = list(zip(train_texts, [{"cats": cats} for cats in train_cats]))
     # get names of other pipes to disable them during training
     other_pipes = [pipe for pipe in nlp.pipe_names if pipe != "textcat"]
