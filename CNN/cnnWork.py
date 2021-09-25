@@ -105,7 +105,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
                     scores["textcat_f"],
                 )
             )
-
+            
     # test the trained model
     test_text = "This movie sucked"
     doc = nlp(test_text)
