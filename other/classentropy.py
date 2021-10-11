@@ -5,6 +5,7 @@
 """
 import numpy as np
 import math
+
 # calculate Entropy
 class Entropy:
     def __init__(self, prain=None, pshine = None, p_rain_g_month = None):
