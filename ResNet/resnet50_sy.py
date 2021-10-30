@@ -99,7 +99,7 @@ def conv_block(input_tensor, kernel_size, filters, stage, block, strides=(2, 2))
 
     conv_name_base = 'res' + str(stage) + block + '_branch'
     bn_name_base = 'bn' + str(stage) + block + '_branch'
-
+    
     x = Conv2D(filters1, (1, 1), strides=strides,
                name=conv_name_base + '2a')(input_tensor)
     x = BatchNormalization(axis=bn_axis, name=bn_name_base + '2a')(x)
