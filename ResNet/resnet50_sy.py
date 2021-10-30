@@ -188,7 +188,7 @@ def ResNet50(include_top=True, weights='imagenet',
             img_input = Input(tensor=input_tensor, shape=input_shape)
         else:
             img_input = input_tensor
-            
+           
     if K.image_data_format() == 'channels_last':
         bn_axis = 3
     else:
