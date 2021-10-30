@@ -56,7 +56,7 @@ def identity_block(input_tensor, kernel_size, filters, stage, block):
         bn_axis = 3
     else:
         bn_axis = 1
-        
+       
     conv_name_base = 'res' + str(stage) + block + '_branch'
     bn_name_base = 'bn' + str(stage) + block + '_branch'
    
