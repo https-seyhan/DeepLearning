@@ -89,7 +89,7 @@ def conv_block(input_tensor, kernel_size, filters, stage, block, strides=(2, 2))
     Note that from stage 3, the first conv layer at main path is with strides=(2,2)
     And the shortcut should have strides=(2,2) as well
     """
- 
+
     filters1, filters2, filters3 = filters
    
     if K.image_data_format() == 'channels_last':
