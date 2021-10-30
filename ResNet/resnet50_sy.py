@@ -174,7 +174,7 @@ def ResNet50(include_top=True, weights='imagenet',
         raise ValueError('If using `weights` as imagenet with `include_top`'
                          ' as true, `classes` should be 1000')
     # Determine proper input shape
- 
+
     input_shape = _obtain_input_shape(input_shape,
                                       default_size=224,
                                       min_size=197,
