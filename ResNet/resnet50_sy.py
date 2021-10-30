@@ -12,6 +12,7 @@
 
 import numpy as np
 import warnings
+
 from __future__ import print_function #for version discrepancies
 from keras import layers
 from keras.layers import Input
