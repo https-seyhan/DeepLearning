@@ -182,7 +182,7 @@ def ResNet50(include_top=True, weights='imagenet',
                                       min_size=197,
                                       data_format=K.image_data_format(),
                                       require_flatten=include_top)
-   
+  
     if input_tensor is None:
         img_input = Input(shape=input_shape)
     else:
