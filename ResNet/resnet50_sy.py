@@ -53,10 +53,10 @@ def identity_block(input_tensor, kernel_size, filters, stage, block):
     """
     filters1, filters2, filters3 = filters
     if K.image_data_format() == 'channels_last':
-        bn_axis = 3
+        bn_axis = 3from __future__ import print_function #for version discrepancies
     else:
         bn_axis = 1
-     
+    
     conv_name_base = 'res' + str(stage) + block + '_branch'
     bn_name_base = 'bn' + str(stage) + block + '_branch'
    
