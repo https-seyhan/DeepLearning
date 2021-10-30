@@ -64,7 +64,7 @@ def identity_block(input_tensor, kernel_size, filters, stage, block):
     x = Conv2D(filters1, (1, 1), name=conv_name_base + '2a')(input_tensor)
     x = BatchNormalization(axis=bn_axis, name=bn_name_base + '2a')(x)
     x = Activation('relu')(x)
-  
+ 
     #Block 2
     x = Conv2D(filters2, kernel_size,
                padding='same', name=conv_name_base + '2b')(x)
