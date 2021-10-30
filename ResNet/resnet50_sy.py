@@ -21,7 +21,7 @@ from keras.layers import Flatten
 from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras.layers import GlobalMaxPooling2D
-from keras.layers import ZeroPadding2D
+from keras.layers ifrom __future__ import print_function #for version discrepanciesmport ZeroPadding2D
 from keras.layers import AveragePooling2D
 from keras.layers import GlobalAveragePooling2D
 from keras.layers import BatchNormalization
@@ -90,7 +90,7 @@ def conv_block(input_tensor, kernel_size, filters, stage, block, strides=(2, 2))
     Note that from stage 3, the first conv layer at main path is with strides=(2,2)
     And the shortcut should have strides=(2,2) as well
     """
-    
+   
     filters1, filters2, filters3 = filters
   
     if K.image_data_format() == 'channels_last':
