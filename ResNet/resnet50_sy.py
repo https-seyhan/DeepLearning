@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from __future__ import print_function #for version discrepancies
+
 """
 @author: saul
 """
@@ -9,6 +9,7 @@ from __future__ import print_function #for version discrepancies
 # Reference:
 - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
 '''
+
 import numpy as np
 import warnings
 
