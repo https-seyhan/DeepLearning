@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import re
+
 import plotly.graph_objs as go
 import plotly.plotly as py
 import cufflinks
