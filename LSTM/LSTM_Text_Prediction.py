@@ -56,7 +56,7 @@ STOPWORDS = set(stopwords.words('english'))
 
 # NLP Data Cleaning
 def clean_text(text):
-  
+ 
     """
         text: a string
         return: modified initial string
