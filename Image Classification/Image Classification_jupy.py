@@ -45,7 +45,6 @@ train_labels = to_categorical(train_labels)
 test_labels = to_categorical(test_labels)
 test_labels
 
-
 # In[9]:
 
 network.fit(train_images, train_labels, epochs = 5, batch_size=128)
