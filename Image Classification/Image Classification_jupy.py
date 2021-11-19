@@ -47,5 +47,4 @@ test_loss, test_acc = network.evaluate(test_images, test_labels)
 # In[11]:
 print('test_acc:', test_acc)
 
-
 # In[ ]:
