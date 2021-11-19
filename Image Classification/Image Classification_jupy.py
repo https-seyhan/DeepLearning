@@ -12,7 +12,6 @@ from keras import layers
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 
 # In[3]:
-
 len(test_labels)
 #test_images[0][10]
 test_labels
