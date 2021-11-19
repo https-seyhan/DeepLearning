@@ -112,6 +112,7 @@ history = model.fit(X_train, Y_train, epochs=epochs, batch_size=batch_size,valid
 
 accr = model.evaluate(X_test,Y_test)
 print('Test set\n  Loss: {:0.3f}\n  Accuracy: {:0.3f}'.format(accr[0],accr[1]))
+
 plt.title('Loss')
 plt.plot(history.history['loss'], label='train')
 plt.plot(history.history['val_loss'], label='test')
