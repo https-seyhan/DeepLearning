@@ -20,6 +20,7 @@ batch_size = 32
 (X_train, y_train), (X_test, y_test) = imdb.load_data(nb_words=max_features)
 X_train = sequence.pad_sequences(X_train, maxlen=maxlen)
 X_test = sequence.pad_sequences(X_test, maxlen=maxlen)
+
 print(len(X_train))
 print(X_train[1])
 
