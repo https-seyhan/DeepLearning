@@ -41,7 +41,6 @@ test_labels
 network.fit(train_images, train_labels, epochs = 5, batch_size=128)
 
 
-
 # In[10]:
 test_loss, test_acc = network.evaluate(test_images, test_labels)
 
