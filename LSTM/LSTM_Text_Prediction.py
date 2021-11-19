@@ -31,6 +31,7 @@ InteractiveShell.ast_node_interactivity = 'all'
 df = pd.read_csv('consumer_complaints_small.csv')
 
 df.Product.value_counts()
+
 # Clean Data
 df.loc[df['Product'] == 'Credit reporting', 'Product'] = 'Credit reporting, credit repair services, or other personal consumer reports'
 df.loc[df['Product'] == 'Credit card', 'Product'] = 'Credit card or prepaid card'
