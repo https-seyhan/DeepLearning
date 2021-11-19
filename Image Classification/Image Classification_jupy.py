@@ -15,7 +15,6 @@ len(test_labels)
 test_labels
 
 # In[4]:
-
 network = models.Sequential()
 network.add(layers.Dense(512, activation = 'relu', input_shape=(28*28,)))
 network.add(layers.Dense(10, activation= 'softmax'))
