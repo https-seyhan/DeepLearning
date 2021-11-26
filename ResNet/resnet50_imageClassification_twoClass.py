@@ -73,7 +73,7 @@ labels[202:]=1
 #labels[404:606]=2
 #labels[606:]=3
 
-#names = ['hamdwritten','nothandwritten']
+#names = ['handwritten','nothandwritten']
 
 # convert class labels to on-hot encoding
 Y = np_utils.to_categorical(labels, num_classes)
