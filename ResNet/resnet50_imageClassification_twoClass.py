@@ -89,6 +89,7 @@ image_input = Input(shape=(224, 224, 3))
 print("Image Input ", image_input)
 model = ResNet50(input_tensor=image_input, include_top=True,weights='imagenet')
 model.summary()
+
 last_layer = model.get_layer('avg_pool').output
 x= Flatten(name='flatten')(last_layer)
 out = Dense(num_classes, activation='softmax', name='output_layer')(x)
