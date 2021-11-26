@@ -32,6 +32,7 @@ data_dir_list = os.listdir(data_path)
 
 #Allocate training data into a list 
 img_data_list=[]
+
 for dataset in data_dir_list:
 	img_list=os.listdir(data_path+'/'+ dataset)
 	print ('Loaded the images of dataset-'+'{}\n'.format(dataset))
