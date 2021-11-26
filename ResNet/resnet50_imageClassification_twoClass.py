@@ -37,7 +37,7 @@ img_data_list=[]
 for dataset in data_dir_list:
 	img_list=os.listdir(data_path+'/'+ dataset)
 	print ('Loaded the images of dataset-'+'{}\n'.format(dataset))
-
+	
 	for img in img_list:
 		img_path = data_path + '/'+ dataset + '/'+ img 
 		img = image.load_img(img_path, target_size=(224, 224))
