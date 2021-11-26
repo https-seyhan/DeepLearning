@@ -25,6 +25,7 @@ print('Input image shape:', x.shape)
 # Loading the training data
 #PATH = os.getcwd()
 PATH = '/home/saul/pythontraining/imageClassification/Transfer-Learning-in-keras---custom-data-master'
+
 # Define data path
 #data_path = PATH + '/data'
 data_path = PATH + '/data2'
