@@ -73,8 +73,7 @@ labels[202:]=1
 #labels[404:606]=2
 #labels[606:]=3
 
-names = ['cats','dogs','horses','humans']
-names = ['horses','humans']
+
 #names = ['hamdwritten','nothandwritten']
 
 # convert class labels to on-hot encoding
