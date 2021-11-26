@@ -121,6 +121,7 @@ print("[INFO] loss={:.4f}, accuracy: {:.4f}%".format(loss,accuracy * 100))
 model = ResNet50(weights='imagenet',include_top=False)
 model.summary()
 last_layer = model.output
+
 # add a global spatial average pooling layer
 x = GlobalAveragePooling2D()(last_layer)
 # add fully-connected & dropout layers
