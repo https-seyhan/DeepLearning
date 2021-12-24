@@ -6,7 +6,7 @@
 #Travel through all directories and sub-directories and grab images. Then convert images to text.
 import os 
 import glob
-data_list = [['']]
+
 import os
 from PIL import Image as PI
 from pytesseract import image_to_string
@@ -15,7 +15,7 @@ import pandas as pd
 import PyPDF2
 from os import listdir
 from os.path import isfile, join
-
+data_list = [['']]
 tesseract_cmd = 'tesseract'
 dirpath = '/home/saul/anaconda3/' 
 #dirpath = '/home/saul/pythontraining/'  
