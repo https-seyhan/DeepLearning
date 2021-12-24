@@ -64,7 +64,7 @@ def convertImageString(folders):
         print("Image to Text ", image_to_text_list)
         evidences = pd.DataFrame(image_to_text_list, columns=['folderName', 'imageName', 'Text']) 
         evidences.to_csv(outputpath + 'OCROutput.csv', sep=',', index=False)
-  
+ 
     #Remove empty lists
     #evidenceFiles  = [x for x in evidenceFiles if x !=[]]
     #print(folders[folder], " ",evidenceFiles, '\n')
