@@ -6,7 +6,6 @@
 #Travel through all directories and sub-directories and grab images. Then convert images to text.
 import os 
 import glob
-
 import os
 from PIL import Image as PI
 from pytesseract import image_to_string
