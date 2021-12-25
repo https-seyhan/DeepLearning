@@ -43,8 +43,7 @@ print(labels[0])
 # I recommend to set labels manually define, good for reusing
 # 0:negative, 1: positive
 
-tag2idx={'0': 0,
- '1': 1}
+tag2idx={'0': 0, '1': 1}
 tag2idx
 
 # Mapping index to name in dictionary
