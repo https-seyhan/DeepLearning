@@ -57,7 +57,7 @@ tag2name={tag2idx[key] : key for key in tag2idx.keys()}
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()
-n_gpuNo wrap
+n_gpu
 
 #Load tokenizer
 # Manually define vocabulary address, if you download the model in local
