@@ -9,7 +9,7 @@ import os
 import torch.nn.functional as F
 from tqdm import tqdm,trange
 from torch.optim import Adam
-from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
+from torch.utils.data import TeNo wrapnsorDataset, DataLoader, RandomSampler, SequentialSampler
 from sklearn.model_selection import train_test_split
 from pytorch_transformers import (XLNetConfig, XLNetForSequenceClassification, XLNetTokenizer)
 from sklearn.metrics import classification_report # to mesure the accuracy of the model
@@ -57,7 +57,7 @@ tag2name={tag2idx[key] : key for key in tag2idx.keys()}
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()
-n_gpu
+n_gpuNo wrap
 
 #Load tokenizer
 # Manually define vocabulary address, if you download the model in local
@@ -99,7 +99,7 @@ for i,sentence in enumerate(sentences):
     # Tokenize sentence to token id list
     tokens_a = tokenizer.encode(sentence)
     # Trim the len of text
- 
+
     if(len(tokens_a)>max_len-2):
         tokens_a = tokens_a[:max_len-2]
     tokens = []
