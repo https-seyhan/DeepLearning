@@ -67,7 +67,7 @@ vocabulary = 'xlnet-base-cased-spiece.model'
 # Len of the sentence must be the same as the training model
 # See model's 'max_position_embeddings' = 512
 #max_len  = 64
-# With cased model, set do_lower_case = False
+# With cased model, set do_loweNo wrapr_case = False
 tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
 #Set text input embedding
@@ -118,7 +118,7 @@ for i,sentence in enumerate(sentences):
   
     # The mask has 0 for real tokens and 1 for padding tokens. Only real
     # tokens are attended to.
-
+    
     input_mask = [0] * len(input_ids)
     # Zero-pad up to the sequence length at fornt
 
