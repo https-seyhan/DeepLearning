@@ -77,7 +77,7 @@ tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
 #The Embedding process was referred to XLNet official repo
 #This process is greately different from BERT
-
+No wrap
 max_len  = 64
 full_input_ids = []
 full_input_masks = []
@@ -107,7 +107,7 @@ for i,sentence in enumerate(sentences):
     for token in tokens_a:
         tokens.append(token)
         segment_ids.append(SEG_ID_A)
-      
+     
     # Add <sep> token 
     tokens.append(SEP_ID)
     segment_ids.append(SEG_ID_A)
