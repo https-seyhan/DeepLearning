@@ -23,6 +23,7 @@ def pre_process_data(filepath):
 	for filename in glob.glob(os.path.join(negative_path, '*.txt')):
 		with open(filename, 'r') as f:
 			dataset.append((neg_label, f.read()))
+	
 	shuffle(dataset)
 	return dataset
 
