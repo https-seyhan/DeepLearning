@@ -50,7 +50,7 @@ def identity_block(input_tensor, kernel_size, filters, stage, block):
     # Returns
         Output tensor for the block.
     """
-  
+ 
     filters1, filters2, filters3 = filters
     if K.image_data_format() == 'channels_last':
         bn_axis = 3from __future__ import print_function #for version discrepancies
