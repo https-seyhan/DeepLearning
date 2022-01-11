@@ -92,7 +92,7 @@ def conv_block(input_tensor, kernel_size, filters, stage, block, strides=(2, 2))
     """
 
     filters1, filters2, filters3 = filters
-  
+ 
     if K.image_data_format() == 'channels_last':
         bn_axis = 3
     else:
