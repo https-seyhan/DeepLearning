@@ -70,6 +70,7 @@ def tok_vec(dataset):
 
 def collect_expected(dataset):
 	expected = []
+	
 	for sample in dataset:
 		expected.append(sample[0])
 	return expected
