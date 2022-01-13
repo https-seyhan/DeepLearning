@@ -9,7 +9,6 @@ automatically via  a built-in dataset loader. The model is added to
 spacy.pipeline, and predictions are available via `doc.cats`. For more details,
 see the documentation:
 * Training: https://spacy.io/usage/training
-
 """
 import plac
 import random
