@@ -32,7 +32,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
         output_dir = Path(output_dir)
         if not output_dir.exists():
             output_dir.mkdir()
-     
+    
     if model is not None:
         nlp = spacy.load(model)  # load existing spaCy model
         print("Loaded model '%s'" % model)
