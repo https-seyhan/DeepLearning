@@ -60,7 +60,7 @@ def collect_expected(dataset):
     expected = []
     #bugsdata = pd.read_csv('bug-metrics.csv', sep= ',')
     bugs = dataset['criticalBugs'] # training dataset has 8 critical bugs and test dataset has 2. Extreamly unbalanced dataset.
-
+    
     for bug in bugs:
         expected.append(bug)
     return expected
@@ -78,7 +78,7 @@ def SVMModel(vectorised_data, target):
     #y_train = to_categorical(y_train, 2)
     x_test = vectorised_data[split_point:]
     y_test = target[split_point:]
-     
+    
     #make each point of data of uniform lenght
     x_train = pad_trunc(x_train, maxlen)
     x_test = pad_trunc(x_test, maxlen)
