@@ -176,8 +176,6 @@ model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_la
 
 # Set model to GPU,if you are using GPU machine
 
-196
-
 model.to(device);
 
 # Add multi GPU support
