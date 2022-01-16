@@ -77,11 +77,6 @@ tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
 # Download model from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-config.json" 
 
-190
-
-​
-
-191
 
 #Create XLNet model
 
