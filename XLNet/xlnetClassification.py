@@ -87,11 +87,6 @@ model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_la
 
 model;
 
-194
-
-​
-
-195
 
 # Set model to GPU,if you are using GPU machine
 
