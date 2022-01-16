@@ -71,7 +71,95 @@ vocabulary = 'xlnet-base-cased-spiece.model'
 tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
 #Set text input embedding
-#    token id embedding
+#    token id embedding188
+
+# Download model from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-pytorch_model.bin"
+
+# Download model from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-config.json" 
+
+190
+
+​
+
+191
+
+#Create XLNet model
+
+192
+
+model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_labels=len(tag2idx))
+
+193
+
+model;
+
+194
+
+​
+
+195
+
+# Set model to GPU,if you are using GPU machine
+
+196
+
+model.to(device);
+
+197
+
+​
+
+198
+
+# Add multi GPU support
+
+199
+
+if n_gpu >1:
+
+200
+
+    model = torch.nn.DataParallel(model)
+
+201
+
+# Set epoch and grad max num
+
+202
+
+epochs = 5
+
+203
+
+max_grad_norm = 1.0
+
+204
+
+​
+
+205
+
+# Cacluate train optimiazaion num
+
+206
+
+num_train_optimization_steps = int( math.ceil(len(tr_inputs) / batch_num) / 1) * epochs
+
+207
+
+​
+
+208
+
+#Set fine tuning method
+
+209
+
+#Manual optimizer
+
+210
+
+​
 #    mask embedding
 #    segment embedding
 
