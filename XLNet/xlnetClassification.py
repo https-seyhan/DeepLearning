@@ -173,11 +173,7 @@ tr_segs = torc188
 
 model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_labels=len(tag2idx))
 
-194
 
-​
-
-195
 
 # Set model to GPU,if you are using GPU machine
 
