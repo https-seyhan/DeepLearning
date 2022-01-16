@@ -80,7 +80,7 @@ tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
 #Create XLNet model
 
-192
+
 
 model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_labels=len(tag2idx))
 
