@@ -224,6 +224,7 @@ if FULL_FINETUNING:
          'weight_decay_rate': 0.0}
     ]
 else:
+    
     # Only fine tune classifier parameters
     param_optimizer = list(model.classifier.named_parameters()) 
     optimizer_grouped_parameters = [{"params": [p for n, p in param_optimizer]}]
