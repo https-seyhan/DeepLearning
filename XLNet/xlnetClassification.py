@@ -178,9 +178,7 @@ model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_la
 
 model.to(device);
 
-# Add multi GPU support
 
-199
 
 if n_gpu >1:
 
