@@ -173,10 +173,6 @@ tr_segs = torc188
 
 model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_labels=len(tag2idx))
 
-193
-
-model;
-
 194
 
 ​
