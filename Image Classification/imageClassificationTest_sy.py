@@ -31,7 +31,6 @@ model.summary()
 model.layers[-1].get_config()
 
 #%%
-
 model = VGG16(weights='imagenet', include_top=False)
 
 model.summary()
