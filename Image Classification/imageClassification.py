@@ -8,7 +8,6 @@ from keras import models
 from keras import layers
 
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
-
 network = models.Sequential()
 #two layer Dertse(fully connected) Deep Learning model. 
 #10 classes softmax
