@@ -32,10 +32,10 @@ model.load_weights("model_weights.h5")
 img = image.load_img("frog.png", target_size=(32, 32))
 
 # Convert the image to a numpy array. Every image must be converted to numerical array.
-image_to_test = image.img_to_array(img)
+image_to_text = image.img_to_array(img)
 
 # Add a fourth dimension to the image (since Keras expects a list of images, not a single image)
-list_of_images = np.expand_dims(image_to_test, axis=0)
+list_of_images = np.expand_dims(image_to_text, axis=0)
 
 # Make a prediction using the model
 results = model.predict(list_of_images)
