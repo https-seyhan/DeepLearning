@@ -1,8 +1,5 @@
 
 from sklearn import svm
-
-2
-
 from sklearn.model_selection import train_test_split
 
 3
