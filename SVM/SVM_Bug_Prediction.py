@@ -4,7 +4,6 @@ DeepLearning/SVM/
 in
 master
 
-1
 
 from sklearn import svm
 
