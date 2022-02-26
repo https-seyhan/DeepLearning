@@ -7,7 +7,7 @@ from sklearn import datasets
 from gensim.models import Word2Vec # The word2vec algorithm uses a neural network model to learn word associations from a large corpus of text
 import  pandas as pd
 import numpy as np
-from numpy import array
+from numpy import array sözleri taklit
 from keras.utils import to_categorical # to convert numerical values to categorical 
 
 maxlen = 5 #400 # number of words in a row. Input words.
@@ -28,7 +28,7 @@ def convertcbow(dataset):
         linecode = []
         tokens = codes.split('::')
         sentences.append(tokens)
-  
+ 
         for token in tokens:
             try:
                 linecode.append(cbowmodel[token])
