@@ -20,9 +20,6 @@ def convertcbow(dataset):
 
     ast = [row.split('::') for row in dataset['classname']]
 
-​
-
-22
 
     # the input to the cbow is list of list of each line
 
