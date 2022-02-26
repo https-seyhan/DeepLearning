@@ -1,4 +1,139 @@
+
+
+DeepLearning/SVM/
+in
+master
+
+1
+
 from sklearn import svm
+
+2
+
+from sklearn.model_selection import train_test_split
+
+3
+
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
+
+4
+
+from sklearn import metrics
+
+5
+
+#Import scikit-learn dataset library
+
+6
+
+from sklearn import datasets
+
+7
+
+from gensim.models import Word2Vec # The word2vec algorithm uses a neural network model to learn word associations from a large corpus of text
+
+8
+
+import  pandas as pd
+
+9
+
+import numpy as np
+
+10
+
+from numpy import array sözleri taklit
+
+11
+
+from keras.utils import to_categorical # to convert numerical values to categorical 
+
+12
+
+​
+
+13
+
+maxlen = 5 #400 # number of words in a row. Input words.
+
+14
+
+embedding_dims = 6 #300 #5 #300 # size of the word vector
+
+15
+
+​
+
+16
+
+#use cbow to maintain semantic relationship when converting code to vector
+
+17
+
+def convertcbow(dataset):
+
+18
+
+    sentences = []
+
+19
+
+    vectorised_codes = []
+
+20
+
+    ast = [row.split('::') for row in dataset['classname']]
+
+21
+
+​
+
+22
+
+    # the input to the cbow is list of list of each line
+
+23
+
+    cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=3, sg=0)
+
+24
+
+    print(' CBOW model ', cbowmodel)
+
+25
+
+    classes = dataset['classname']
+
+26
+
+ 
+
+27
+
+    for codes in classes:
+
+28
+
+        linecode = []
+
+29
+
+        tokens = codes.split('::')
+
+30
+
+        sentences.append(tokens)
+
+31
+
+ 
+
+32
+
+        for token in tokens:
+
+
+            try:from sklearn import svm
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from sklearn import metrics
