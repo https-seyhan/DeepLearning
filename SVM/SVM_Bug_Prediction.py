@@ -13,7 +13,6 @@ from numpy import array
 
 from keras.utils import to_categorical # to convert numerical values to categorical 
 
-12
 
 ​
 
