@@ -13,9 +13,6 @@ from numpy import array
 from keras.utils import to_categorical # to convert numerical values to categorical 
 
 
-​
-
-13
 
 maxlen = 5 #400 # number of words in a row. Input words.
 
