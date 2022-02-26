@@ -1,10 +1,4 @@
 
-
-DeepLearning/SVM/
-in
-master
-
-
 from sklearn import svm
 
 2
