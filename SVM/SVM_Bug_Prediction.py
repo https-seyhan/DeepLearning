@@ -8,9 +8,6 @@ from sklearn import metrics
 from sklearn import datasets
 from gensim.models import Word2Vec # The word2vec algorithm uses a neural network model to learn word associations from a large corpus of text
 import  pandas as pd
-
-9
-
 import numpy as np
 
 10
