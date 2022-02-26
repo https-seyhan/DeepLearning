@@ -31,10 +31,6 @@ def convertcbow(dataset):
 
     classes = dataset['classname']
 
-26
-
- 
-
 27
 
     for codes in classes:
