@@ -28,7 +28,6 @@ def convertcbow(dataset):
 
     print(' CBOW model ', cbowmodel)
 
-25
 
     classes = dataset['classname']
 
