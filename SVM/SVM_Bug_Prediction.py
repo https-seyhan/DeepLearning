@@ -2,9 +2,6 @@
 from sklearn import svm
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
-
-4
-
 from sklearn import metrics
 
 5
