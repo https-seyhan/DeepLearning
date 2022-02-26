@@ -18,7 +18,6 @@ embedding_dims = 6 #300 #5 #300 # size of the word vector
 def convertcbow(dataset):
     sentences = []
 
-19
 
     vectorised_codes = []
 
