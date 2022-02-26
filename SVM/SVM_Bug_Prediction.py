@@ -12,7 +12,6 @@ from numpy import array
 from keras.utils import to_categorical # to convert numerical values to categorical 
 maxlen = 5 #400 # number of words in a row. Input words.
 embedding_dims = 6 #300 #5 #300 # size of the word vector
-
 #use cbow to maintain semantic relationship when converting code to vector
 def convertcbow(dataset):
     sentences = []
