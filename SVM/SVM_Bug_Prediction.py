@@ -9,9 +9,7 @@ from sklearn import datasets
 from gensim.models import Word2Vec # The word2vec algorithm uses a neural network model to learn word associations from a large corpus of text
 import  pandas as pd
 import numpy as np
-from numpy import array sözleri taklit
-
-11
+from numpy import array
 
 from keras.utils import to_categorical # to convert numerical values to categorical 
 
