@@ -18,7 +18,6 @@ def convertcbow(dataset):
     sentences = []
     vectorised_codes = []
 
-20
 
     ast = [row.split('::') for row in dataset['classname']]
 
