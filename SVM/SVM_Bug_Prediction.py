@@ -20,8 +20,6 @@ def convertcbow(dataset):
 
     ast = [row.split('::') for row in dataset['classname']]
 
-21
-
 ​
 
 22
