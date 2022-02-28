@@ -56,7 +56,6 @@ def tok_vec(dataset):
 	for sample in dataset:
 		tokens = tokenizer(sample[1])
 		sample_vecs = []
-
 		for token in tokens:	
 			try:
 				sample_vecs.append(nlp(str(token)).vector)
