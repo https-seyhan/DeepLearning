@@ -43,7 +43,6 @@ def tokenize_and_vectorized(dataset):
 		tokens = tokenizer.tokenize(sample[1]) #tokize sentences 
 		sample_vecs = []	
 		print(tokens)
-
 		for token in tokens:
 			try:
 				sample_vecs.append(word_vectors[token])
