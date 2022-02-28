@@ -99,7 +99,7 @@ def rnnmodel(dataset, vectorised_data, expected):
 
 	x_test = np.reshape(x_test, (len(x_test), maxlen, embedding_dims)) # sample, time steps, number of features
 	y_test = np.array(y_test)
-	
+
 	# Build RNN model
 	model = Sequential()
 	model.add(SimpleRNN(num_neurons, return_sequences = True, input_shape=(maxlen, embedding_dims)))
