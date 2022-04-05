@@ -51,6 +51,7 @@ print_plot(10)
 print_plot(100)
 
 df = df.reset_index(drop=True)
+
 #Regular expressions
 REPLACE_BY_SPACE_RE = re.compile('[/(){}\[\]\|@,;]')
 BAD_SYMBOLS_RE = re.compile('[^0-9a-z #+_]')
