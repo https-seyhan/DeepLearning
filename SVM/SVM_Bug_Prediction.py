@@ -14,26 +14,6 @@ maxlen = 5 #400 # number of words in a row. Input words.
 embedding_dims = 6 #300 #5 #300 # size of the word vector
 #use cbow to maintain semantic relationship when converting code to vector
 
-
-
-
- 
-
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
-from sklearn import metrics
-#Import scikit-learn dataset library
-from sklearn import datasets
-from gensim.models import Word2Vec # The word2vec algorithm uses a neural network model to learn word associations from a large corpus of text
-import  pandas as pd
-import numpy as np
-from numpy import array sözleri taklit
-from keras.utils import to_categorical # to convert numerical values to categorical 
-
-maxlen = 5 #400 # number of words in a row. Input words.
-embedding_dims = 6 #300 #5 #300 # size of the word vector
-
-#use cbow to maintain semantic relationship when converting code to vector
 def convertcbow(dataset):
     sentences = []
     vectorised_codes = []
