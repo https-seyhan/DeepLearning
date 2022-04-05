@@ -18,7 +18,7 @@ maxlen = 80
 batch_size = 32
 
 #Prepare dataset
-(X_train, y_train), (X_test, y_test) = imdb.load_data(nb_words=max_features)
+(X_train, y_train), (X_test, y_test) = imdb.load_data(nb_words=max_features) #train test dataset
 X_train = sequence.pad_sequences(X_train, maxlen=maxlen)
 X_test = sequence.pad_sequences(X_test, maxlen=maxlen)
 
