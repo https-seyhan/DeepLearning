@@ -7,7 +7,7 @@
 import numpy as np
 from keras.preprocessing import sequence
 from keras.utils import np_utils
-from keras.models import Sequential
+from keras.models import Sequential #RNN model
 from keras.layers import Dense, Dropout, Activation, Embedding
 from keras.layers import LSTM
 from keras.datasets import imdb
