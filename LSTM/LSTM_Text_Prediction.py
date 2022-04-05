@@ -38,6 +38,7 @@ df.loc[df['Product'] == 'Credit card', 'Product'] = 'Credit card or prepaid card
 df.loc[df['Product'] == 'Payday loan', 'Product'] = 'Payday loan, title loan, or personal loan'
 df.loc[df['Product'] == 'Virtual currency', 'Product'] = 'Money transfer, virtual currency, or money service'
 df = df[df.Product != 'Other financial service']
+
 df['Product'].value_counts().sort_values(ascending=False).iplot(kind='bar', yTitle='Number of Complaints', 
                                                                 title='Number complaints in each product')
 
