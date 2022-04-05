@@ -16,6 +16,7 @@ from keras.utils.vis_utils import plot_model
 max_features = 20000
 maxlen = 80
 batch_size = 32
+
 #Prepare dataset
 (X_train, y_train), (X_test, y_test) = imdb.load_data(nb_words=max_features)
 X_train = sequence.pad_sequences(X_train, maxlen=maxlen)
