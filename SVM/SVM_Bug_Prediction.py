@@ -15,8 +15,6 @@ embedding_dims = 6 #300 #5 #300 # size of the word vector
 #use cbow to maintain semantic relationship when converting code to vector
 
 
-        linecode = []
-
 
 
  
