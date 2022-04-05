@@ -43,7 +43,6 @@ df['Product'].value_counts().sort_values(ascending=False).iplot(kind='bar', yTit
                                                                 title='Number complaints in each product')
 def print_plot(index):
     example = df[df.index == index][['Consumer complaint narrative', 'Product']].values[0]
-
     if len(example) > 0:
         print(example[0])
         print('Product:', example[1])
