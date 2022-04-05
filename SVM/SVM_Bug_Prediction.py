@@ -19,14 +19,6 @@ embedding_dims = 6 #300 #5 #300 # size of the word vector
 
 
 
-        tokens = codes.split('::')
-
-30
-
-        sentences.append(tokens)
-
-31
-
  
 
 from sklearn.model_selection import train_test_split
