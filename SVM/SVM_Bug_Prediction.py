@@ -13,26 +13,7 @@ from keras.utils import to_categorical # to convert numerical values to categori
 maxlen = 5 #400 # number of words in a row. Input words.
 embedding_dims = 6 #300 #5 #300 # size of the word vector
 #use cbow to maintain semantic relationship when converting code to vector
-def convertcbow(dataset):
-    sentences = []
-    vectorised_codes = []
-    ast = [row.split('::') for row in dataset['classname']]
 
-
-    # the input to the cbow is list of list of each line
-
-    cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=3, sg=0)
-
-    print(' CBOW model ', cbowmodel)
-
-
-    classes = dataset['classname']
-
-27
-
-    for codes in classes:
-
-28
 
         linecode = []
 
@@ -48,12 +29,6 @@ def convertcbow(dataset):
 
  
 
-32
-
-        for token in tokens:
-
-
-            try:from sklearn import svm
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from sklearn import metrics
