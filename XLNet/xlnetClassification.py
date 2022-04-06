@@ -95,7 +95,6 @@ if n_gpu >1:
 # Set epoch and grad max num
 
 
-
 epochs = 5
 
 203
