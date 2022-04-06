@@ -91,7 +91,6 @@ model.to(device);
 if n_gpu >1:
     model = torch.nn.DataParallel(model)
 
-
 # Set epoch and grad max num
 
 
