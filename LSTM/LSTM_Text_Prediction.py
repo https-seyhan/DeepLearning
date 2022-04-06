@@ -87,6 +87,7 @@ EMBEDDING_DIM = 100
 tokenizer = Tokenizer(num_words=MAX_NB_WORDS, filters='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~', lower=True)
 tokenizer.fit_on_texts(df['Consumer complaint narrative'].values)
 word_index = tokenizer.word_index
+
 print('Found %s unique tokens.' % len(word_index))
 
 X = tokenizer.texts_to_sequences(df['Consumer complaint narrative'].values)
