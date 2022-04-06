@@ -72,7 +72,6 @@ tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
 #Set text input embedding
 #    token id embedding188
-
 # Download model from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-pytorch_model.bin"
 
 # Download model from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-config.json" 
