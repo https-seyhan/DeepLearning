@@ -227,7 +227,6 @@ if n_gpu >1:
 
     model = torch.nn.DataParallel(model)
 
-201
 
 # Set epoch and grad max num
 
