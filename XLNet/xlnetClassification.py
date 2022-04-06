@@ -90,7 +90,6 @@ model.to(device);
 # Add multi GPU support
 
 
-
 if n_gpu >1:
 
 200
