@@ -119,7 +119,7 @@ num_train_optimization_steps = int( math.ceil(len(tr_inputs) / batch_num) / 1) *
 
 #The Embedding process was referred to XLNet official repo
 #This process is greately different from BERT
-No wrap
+
 max_len  = 64
 full_input_ids = []
 full_input_masks = []
