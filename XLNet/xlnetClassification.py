@@ -249,7 +249,7 @@ num_train_optimization_steps = int( math.ceil(len(tr_inputs) / batch_num) / 1) *
 
 #Manual optimizer
 
-210
+
 
 ​h.tensor(tr_segs)
 val_segs = torch.tensor(val_segs)
