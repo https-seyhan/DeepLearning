@@ -87,7 +87,6 @@ model;
 
 model.to(device);
 
-
 # Add multi GPU support
 
 
