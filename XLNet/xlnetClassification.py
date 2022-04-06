@@ -109,12 +109,6 @@ max_grad_norm = 1.0
 
 num_train_optimization_steps = int( math.ceil(len(tr_inputs) / batch_num) / 1) * epochs
 
-207
-
-​
-
-208
-
 #Set fine tuning method
 
 209
