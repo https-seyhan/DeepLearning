@@ -86,7 +86,6 @@ model;
 
 # Set model to GPU,if you are using GPU machine
 
-
 model.to(device);
 
 
