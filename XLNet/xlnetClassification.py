@@ -97,7 +97,6 @@ if n_gpu >1:
 epochs = 5
 
 
-
 max_grad_norm = 1.0
 
 204
