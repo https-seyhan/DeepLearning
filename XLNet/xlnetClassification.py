@@ -92,7 +92,6 @@ model.to(device);
 
 if n_gpu >1:
 
-200
 
     model = torch.nn.DataParallel(model)
 
