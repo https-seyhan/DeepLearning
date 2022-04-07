@@ -53,7 +53,7 @@ img_data=img_data[0]
 #The shape should be as (808, 224, 224, 3)
 print (img_data.shape)
 
-# Define the number of classes
+#Define the number of classes
 num_classes = 4
 #num_classes = 2
 num_of_samples = img_data.shape[0]
