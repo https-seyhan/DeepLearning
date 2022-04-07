@@ -33,7 +33,6 @@ def VGG16(include_top=True, weights='imagenet',
           pooling=None,
           classes=1000):
     """Instantiates the VGG16 architecture.
-
     Optionally loads weights pre-trained
     on ImageNet. Note that when using TensorFlow,
     for best performance you should set
