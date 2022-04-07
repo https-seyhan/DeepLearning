@@ -83,7 +83,6 @@ def VGG16(include_top=True, weights='imagenet',
         raise ValueError('The `weights` argument should be either '
                          '`None` (random initialization) or `imagenet` '
                          '(pre-training on ImageNet).')
-
     if weights == 'imagenet' and include_top and classes != 1000:
         raise ValueError('If using `weights` as imagenet with `include_top`'
                          ' as true, `classes` should be 1000')
