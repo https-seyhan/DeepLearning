@@ -159,5 +159,6 @@ plt.ylabel('accuracy')
 plt.title('train_acc vs val_acc')
 plt.grid(True)
 plt.legend(['train','val'],loc=4)
+
 #print plt.style.available # use bmh, classic,ggplot for big pictures
 plt.style.use(['classic'])
