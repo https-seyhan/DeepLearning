@@ -190,7 +190,7 @@ preds = model.predict(x)
 print('Predicted:', decode_predictions(preds))
 ## print: [[u'n02504458', u'African_elephant']]
 
-##
+#
 model = ResNet50(include_top=False,weights='imagenet')
 model.summary()
 model.layers[-1].get_config()
