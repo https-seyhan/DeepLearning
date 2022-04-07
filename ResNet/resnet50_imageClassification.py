@@ -65,6 +65,7 @@ labels[404:606]=2
 labels[606:]=3
 
 names = ['cats','dogs','horses','humans']
+
 #names = ['hamdwritten','nothandwritten']
 # convert class labels to on-hot encoding
 Y = np_utils.to_categorical(labels, num_classes)
