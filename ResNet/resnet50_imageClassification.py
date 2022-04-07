@@ -2,7 +2,7 @@
 import numpy as np
 import os
 import time
-from resnet50_sy import ResNet50
+from resnet50_sy import ResNet50 # use my own ResNet50 model
 from keras.preprocessing import image
 from keras.layers import GlobalAveragePooling2D, Dense, Dropout,Activation,Flatten
 from imagenet_utils import preprocess_input
