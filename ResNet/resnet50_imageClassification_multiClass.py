@@ -182,7 +182,6 @@ plt.legend(['train','val'],loc=4)
 plt.style.use(['classic'])
 
 
-
 img_path = '/home/saul/pythontraining/imageClassification/handwriting2.jpg'
 img = image.load_img(img_path, target_size=(224, 224))
 x = image.img_to_array(img)
