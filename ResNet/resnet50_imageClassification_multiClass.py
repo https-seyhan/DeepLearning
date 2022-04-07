@@ -192,7 +192,6 @@ preds = custom_resnet_model2.predict(x)
 print(preds[0])
 print('Predicted:', decode_predictions(preds))
 
-
 pred = custom_resnet_model2.predict(X_test)
 
 print("Accuracy: {:3f}".format(accuracy_score(y_test,pred > 0.5)))
