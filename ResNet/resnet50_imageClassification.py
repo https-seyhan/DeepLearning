@@ -4,7 +4,7 @@ import os
 import time
 from resnet50_sy import ResNet50 # use my own ResNet50 model
 from keras.preprocessing import image
-from keras.layers import GlobalAveragePooling2D, Dense, Dropout,Activation,Flatten
+from keras.layers import GlobalAveragePooling2D, Dense, Dropout,Activation,Flatten # CNN parameters
 from imagenet_utils import preprocess_input
 from keras.layers import Input
 from keras.models import Model
