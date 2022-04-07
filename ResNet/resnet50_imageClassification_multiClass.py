@@ -48,6 +48,7 @@ for dataset in data_dir_list:
 		x = np.expand_dims(x, axis=0)
 		x = preprocess_input(x) 
 		img_data_list.append(x)
+		
 print("Len Image ", len(img_data_list))
 #Convert Images to Array
 img_data = np.array(img_data_list)
