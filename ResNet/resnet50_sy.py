@@ -19,7 +19,8 @@ from keras.layers import Flatten
 from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras.layers import GlobalMaxPooling2D
-from keras.layers ifrom __future__ import print_function #for version discrepanciesmport ZeroPadding2D
+from keras.layers ifrom __future__ import print_function #for version discrepancies
+mport ZeroPadding2D
 from keras.layers import AveragePooling2D
 from keras.layers import GlobalAveragePooling2D
 from keras.layers import BatchNormalization
