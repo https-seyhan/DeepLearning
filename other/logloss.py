@@ -33,6 +33,7 @@ if __name__ == "__main__":
 
     for i in np.arange(100, 0, -0.1):
         print(logloss(1, i))
+        
 plt.plot(probs, logprobs)
 plt.xlabel('probabilities')
 plt.ylabel('log probabilities')
