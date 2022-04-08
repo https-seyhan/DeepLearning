@@ -3,6 +3,7 @@
 """
 @author: saul
 """
+
 # Using Keras for LSTM
 import numpy as np
 from keras.preprocessing import sequence
