@@ -49,6 +49,7 @@ def main(model=None, output_dir=None, n_iter=20, n_texts=2000, init_tok2vec=None
                 "architecture": "simple_cnn",
             }
         )
+        
         nlp.add_pipe(textcat, last=True)
     # otherwise, get it, so we can add labels to it
     else:
