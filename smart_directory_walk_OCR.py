@@ -98,6 +98,7 @@ def getSubDirs(dir):
     #print('var' in dirs)
     #print(dirs)
     #print("Direcrories ", dirs[0])
+    
     convertImageString(dirs[0])
     ListFiles = os.walk(os.getcwd())
     SplitTypes = []
