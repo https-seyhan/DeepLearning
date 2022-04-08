@@ -4,7 +4,7 @@
 @author: saul
 """
 # tesnserflow test on GPU and CPU
-
+#use tensors for the test
 import tensorflow as tf
 # Creates a graph.
 with tf.device('/gpu:0'):
